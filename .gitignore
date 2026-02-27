@@ -1,0 +1,24 @@
+# PDF files (CV is tracked)
+# *.pdf
+
+# Claude config
+CLAUDE.md
+TASK.md
+.claude/
+.agent/
+.agents/
+skills-lock.json
+
+# OS files
+.DS_Store
+
+# Editor
+tony.code-workspace
+
+# Test files
+test_css.js
+
+# Template unused
+demo/
+static/img/
+static/style/master-pink.css
