@@ -69,6 +69,29 @@
   };
 
   /* ---------------------------------------------- /*
+	 * Hero Scroll Indicator Fade Out
+	/* ---------------------------------------------- */
+  NAY.ScrollIndicatorHide = function () {
+    var indicator = document.querySelector(".scroll-indicator");
+    if (!indicator) return;
+
+    var scrolled = window.scrollY || window.pageYOffset;
+    
+    // Fade out completely over the first 150px of scroll
+    var progress = Math.min(scrolled / 150, 1);
+    var opacity = 1 - progress;
+    
+    indicator.style.opacity = opacity;
+    
+    // Disable clicks when fully invisible
+    if (opacity <= 0) {
+      indicator.style.pointerEvents = "none";
+    } else {
+      indicator.style.pointerEvents = "all";
+    }
+  };
+
+  /* ---------------------------------------------- /*
 	 * Section 3 (Competencies) Top Corners reveal
 	/* ---------------------------------------------- */
   var competenciesRaf = null;
@@ -1491,6 +1514,7 @@
     NAY.CertReveal();
     NAY.EducationReveal();
     NAY.SectionRadius();
+    NAY.ScrollIndicatorHide();
 
     // Initialize translations with default language
     var defaultLang = $("body").attr("data-lang") || "en";
@@ -1502,6 +1526,7 @@
     (NAY.ProgressBar(), NAY.HeaderFixd());
     NAY.HeroDarken();
     NAY.CompetenciesReveal();
+    NAY.ScrollIndicatorHide();
   });
 
   // Window on Resize
