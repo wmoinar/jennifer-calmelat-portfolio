@@ -85,18 +85,9 @@
       var scrolledIn = Math.max(0, winH - sectionTop);
       var topRadius = Math.min(1, scrolledIn / 400) * maxRadius;
 
-      // BOTTOM corners: round in last 30% of scroll (leaving the section)
-      var scrollAreaTop = sectionTop + window.pageYOffset;
-      var scrollRange = section.offsetHeight - winH;
-      var progress =
-        scrollRange > 0
-          ? Math.max(
-              0,
-              Math.min(1, (window.pageYOffset - scrollAreaTop) / scrollRange),
-            )
-          : 0;
-      var botRadius =
-        Math.max(0, Math.min(1, (progress - 0.7) / 0.3)) * maxRadius;
+      // BOTTOM corners: round as section leaves viewport (bottom edge moves up)
+      var botScrolledIn = Math.max(0, winH - section.getBoundingClientRect().bottom);
+      var botRadius = Math.min(1, botScrolledIn / 400) * maxRadius;
 
       // Apply to section itself — white page shows through the rounded cutouts
       section.style.borderRadius =
