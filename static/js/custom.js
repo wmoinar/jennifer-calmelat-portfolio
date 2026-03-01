@@ -49,9 +49,12 @@
     var scrolled = window.scrollY || window.pageYOffset;
     var heroH = hero.offsetHeight;
 
-    // Animate border radius from 0 to 48px over the first 300px of scroll
+    var isMobile = window.innerWidth <= 991;
+    var maxRadius = isMobile ? 30 : 60;
+    
+    // Animate border radius from 0 to maxRadius over the first 300px of scroll
     var radiusProgress = Math.min(scrolled / 200, 1);
-    var currentRadius = radiusProgress * 100; // max 48px
+    var currentRadius = radiusProgress * maxRadius;
     hero.style.borderRadius =
       "0 0 " + currentRadius + "px " + currentRadius + "px";
 
@@ -77,7 +80,7 @@
       if (!section) return;
 
       var isMobile = window.innerWidth <= 991;
-      var maxRadius = isMobile ? 40 : 120;
+      var maxRadius = isMobile ? 30 : 60;
 
       // TOP corners: round as section enters viewport from below
       var winH = window.innerHeight;
