@@ -700,3 +700,22 @@ The text blocks (bullet points) in the "Work Experience" section are currently l
 - Set text alignment to `justify` for paragraphs and list items within the `#experience` section.
 - Ensure the hyphens and spacing look appropriate (no massive gaps between words).
 - Do not commit or mark as done until the user approves.
+
+---
+
+## T27 · Generate Images for Key Competencies
+
+**Status**: `todo`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `index.html`
+
+### Problem
+
+The "Key Competencies" section dynamically displays information as the user scrolls, but it lacks visual representation. The user wants a custom, high-quality, and stylistically cohesive image generated for each competency item to be displayed on the right side of the section as the corresponding item becomes active.
+
+### Acceptance Criteria
+
+- Generate one image per competency listed in Section 3.
+- All images must follow a cohesive, premium design style suitable for an Awwwards-winning portfolio.
+- Load the final images into the project once approved.
