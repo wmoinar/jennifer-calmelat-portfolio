@@ -184,37 +184,72 @@
     var layerFront = document.getElementById('origami-layer-front');
     if (!layerBack || !layerFront) return;
 
-    // The 6 geometric definitions representing the competencies
+    // High-complexity 3D/Isometric geometric patterns for a premium "origami wireframe" aesthetic
     var shapes = [
-      // 0: PSEAH & Fraud (Shield)
+      // 0: PSEAH & Fraud (Intricate Nested Shield & Aperture)
       {
-        back: '<polygon points="-25,-25 25,-25 25,10 0,35 -25,10" style="--origami-fill: rgba(74, 144, 226, 0.15)"/>',
-        front: '<path d="M-20,-20 L20,-20 L20,8 L0,28 L-20,8 Z" style="--origami-fill: rgba(74, 144, 226, 0.25)"/><line x1="0" y1="-20" x2="0" y2="28" style="stroke: rgba(255,255,255,0.4);"/><circle cx="0" cy="4" r="6" style="--origami-fill: rgba(255,255,255,0.8); stroke: none;"/>'
+        back: '<polygon points="-30,-30 30,-30 40,10 0,55 -40,10" style="--origami-fill: rgba(74, 144, 226, 0.08)"/>' +
+              '<polygon points="-20,-15 20,-15 25,12 0,38 -25,12" style="--origami-fill: rgba(74, 144, 226, 0.12)"/>' +
+              '<polygon points="0,-30 -30,-30 -40,10 0,55" style="--origami-fill: rgba(74, 144, 226, 0.05)"/>',
+        front: '<path d="M-30,-30 L30,-30 L40,10 L0,55 L-40,10 Z M-20,-15 L20,-15 L25,12 L0,38 L-25,12 Z M-10,-5 L10,-5 L15,8 L0,22 L-15,8 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M0,55 L0,-30 M-40,10 L40,10 M-25,12 L25,12 M-15,8 L15,8" style="--origami-fill: transparent; stroke-width: 0.8; stroke: rgba(255,255,255,0.4);"/>' +
+               '<circle cx="0" cy="5" r="12" style="--origami-fill: transparent; stroke-width: 1.5;"/>' +
+               '<circle cx="0" cy="5" r="4" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
       },
-      // 1: Project Management (Connected Nodes/Blocks)
+      // 1: Project Management (Complex Hypercube / Network)
       {
-        back: '<polygon points="-30,0 0,-15 30,0 0,15" style="--origami-fill: rgba(80, 227, 194, 0.15)"/><polygon points="-30,0 0,15 0,35 -30,20" style="--origami-fill: rgba(80, 227, 194, 0.1)"/><polygon points="30,0 0,15 0,35 30,20" style="--origami-fill: rgba(80, 227, 194, 0.05)"/>',
-        front: '<circle cx="-20" cy="-5" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="20" cy="-5" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="0" cy="25" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="0" cy="-25" r="5" style="--origami-fill: rgba(80, 227, 194, 0.9); stroke: none;"/><path d="M-20,-5 L0,-25 L20,-5 L0,25 Z" style="--origami-fill: transparent"/>'
+        back: '<polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" style="--origami-fill: rgba(80, 227, 194, 0.08)"/>' +
+              '<polygon points="0,-20 18,-10 18,10 0,20 -18,10 -18,-10" style="--origami-fill: rgba(80, 227, 194, 0.12)"/>' +
+              '<polygon points="0,0 35,-20 0,-40 -35,-20" style="--origami-fill: rgba(80, 227, 194, 0.05)"/>' +
+              '<polygon points="0,0 35,20 35,-20" style="--origami-fill: rgba(80, 227, 194, 0.02)"/>',
+        front: '<path d="M0,-40 L35,-20 L35,20 L0,40 L-35,20 L-35,-20 Z M0,-20 L18,-10 L18,10 L0,20 L-18,10 L-18,-10 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M0,-40 L0,-20 M35,-20 L18,-10 M35,20 L18,10 M0,40 L0,20 M-35,20 L-18,10 M-35,-20 L-18,-10" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<path d="M-35,-20 L35,20 M-35,20 L35,-20 M0,-40 L0,40 M-35,0 L35,0" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>' +
+               '<circle cx="0" cy="0" r="6" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
       },
-      // 2: Compliance (Scales/Balance)
+      // 2: Compliance (Geometric Scales / Balance structure)
       {
-        back: '<polygon points="-10,-30 10,-30 15,35 -15,35" style="--origami-fill: rgba(245, 166, 35, 0.1)"/><circle cx="-25" cy="15" r="12" style="--origami-fill: rgba(245, 166, 35, 0.15)"/><circle cx="25" cy="15" r="12" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>',
-        front: '<line x1="0" y1="-25" x2="0" y2="30"/><line x1="-30" y1="-5" x2="30" y2="-5"/><path d="M-30,-5 L-35,15 L-15,15 Z" style="--origami-fill: rgba(245, 166, 35, 0.25)"/><path d="M30,-5 L15,15 L35,15 Z" style="--origami-fill: rgba(245, 166, 35, 0.25)"/><circle cx="0" cy="-5" r="3" style="--origami-fill: #fff; stroke: none;"/>'
+        back: '<polygon points="-40,-15 40,-15 30,-5 -30,-5" style="--origami-fill: rgba(245, 166, 35, 0.1)"/>' +
+              '<polygon points="-45,5 -25,5 -35,25" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>' +
+              '<polygon points="25,5 45,5 35,25" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>' +
+              '<polygon points="-10,-30 10,-30 15,40 -15,40" style="--origami-fill: rgba(245, 166, 35, 0.05)"/>',
+        front: '<path d="M-10,-30 L10,-30 L15,40 L-15,40 Z M0,-30 L0,40 M-10,35 L10,35" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M-40,-15 L40,-15 L30,-5 L-30,-5 Z M-35,-10 L35,-10" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M-40,-15 L-45,5 L-25,5 L-30,-5 M-45,5 L-35,25 L-25,5 M-40,-15 L-35,25 L-30,-5" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<path d="M40,-15 L45,5 L25,5 L30,-5 M45,5 L35,25 L25,5 M40,-15 L35,25 L30,-5" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<circle cx="0" cy="-10" r="5" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
       },
-      // 3: Case Management (Stacked Folders)
+      // 3: Case Management (Isometric Grid Building / Databases)
       {
-        back: '<polygon points="-20,-25 15,-25 25,-15 25,25 -20,25" style="--origami-fill: rgba(184, 233, 134, 0.15)"/><polygon points="-15,-20 20,-20 30,-10 30,30 -15,30" style="--origami-fill: rgba(184, 233, 134, 0.1)"/>',
-        front: '<polygon points="-25,-15 -10,-15 -5,-5 30,-5 30,30 -25,30" style="--origami-fill: rgba(184, 233, 134, 0.3)"/><line x1="-15" y1="5" x2="15" y2="5"/><line x1="-15" y1="15" x2="20" y2="15"/>'
+        back: '<polygon points="0,-10 25,2 0,15 -25,2" style="--origami-fill: rgba(184, 233, 134, 0.15)"/>' +
+              '<polygon points="0,5 25,17 0,30 -25,17" style="--origami-fill: rgba(184, 233, 134, 0.1)"/>' +
+              '<polygon points="0,20 25,32 0,45 -25,32" style="--origami-fill: rgba(184, 233, 134, 0.05)"/>' +
+              '<polygon points="0,-30 25,-18 0,-5 -25,-18" style="--origami-fill: rgba(184, 233, 134, 0.2)"/>',
+        front: '<path d="M0,-30 L25,-18 L0,-5 L-25,-18 Z M0,-10 L25,2 L0,15 L-25,2 Z M0,5 L25,17 L0,30 L-25,17 Z M0,20 L25,32 L0,45 L-25,32 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M-25,-18 L-25,32 M25,-18 L25,32 M0,-5 L0,45" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<path d="M-12,-24 L12,0 M-12,-4 L12,20 M-12,11 L12,35 M12,-24 L-12,0 M12,-4 L-12,20 M12,11 L-12,35" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>'
       },
-      // 4: Review (Magnifying Lens / Target)
+      // 4: Review (Gyroscope / Complex Optical Lens)
       {
-        back: '<circle cx="0" cy="-5" r="22" style="--origami-fill: rgba(144, 19, 254, 0.1)"/><polygon points="12,12 30,30 20,40 2,22" style="--origami-fill: rgba(144, 19, 254, 0.15)"/>',
-        front: '<circle cx="0" cy="-5" r="16" style="--origami-fill: rgba(144, 19, 254, 0.2)"/><circle cx="0" cy="-5" r="6" style="--origami-fill: rgba(255, 255, 255, 0.8)"/><line x1="12" y1="7" x2="28" y2="23" style="stroke-width:4;"/><line x1="-25" y1="-5" x2="-35" y2="-5" style="stroke: rgba(255,255,255,0.4);"/><line x1="0" y1="-30" x2="0" y2="-40" style="stroke: rgba(255,255,255,0.4);"/>'
+        back: '<circle cx="0" cy="0" r="30" style="--origami-fill: rgba(144, 19, 254, 0.05)"/><circle cx="0" cy="0" r="20" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>' +
+              '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(45)" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>' +
+              '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(-45)" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>',
+        front: '<circle cx="0" cy="0" r="30" style="--origami-fill: transparent; stroke-width: 1.2;"/><circle cx="0" cy="0" r="20" style="--origami-fill: transparent; stroke-width: 1.5;"/><circle cx="0" cy="0" r="10" style="--origami-fill: transparent; stroke-width: 0.8;"/>' +
+               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(45)" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(-45)" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(90)" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.5);"/>' +
+               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(0)" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.5);"/>' +
+               '<circle cx="0" cy="0" r="4" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
       },
-      // 5: Training & Capacity (Upward Arrow / Growth)
+      // 5: Training & Capacity (Intricate Crystal / Seed of Life geometry)
       {
-        back: '<polygon points="-30,30 0,5 30,30" style="--origami-fill: rgba(255, 107, 107, 0.1)"/><polygon points="-15,15 0,-10 15,15" style="--origami-fill: rgba(255, 107, 107, 0.15)"/>',
-        front: '<polygon points="0,-35 -20,-5 -5,-5 -5,35 5,35 5,-5 20,-5" style="--origami-fill: rgba(255, 107, 107, 0.3)"/><circle cx="0" cy="-20" r="3" style="--origami-fill: #fff; stroke: none;"/>'
+        back: '<polygon points="0,-45 25,-15 40,20 0,45 -40,20 -25,-15" style="--origami-fill: rgba(255, 107, 107, 0.05)"/>' +
+              '<polygon points="0,-25 15,0 20,25 0,35 -20,25 -15,0" style="--origami-fill: rgba(255, 107, 107, 0.1)"/>' +
+              '<polygon points="0,-45 40,20 0,0 -40,20" style="--origami-fill: rgba(255, 107, 107, 0.08)"/>',
+        front: '<path d="M0,-45 L25,-15 L40,20 L0,45 L-40,20 L-25,-15 Z M0,-25 L15,0 L20,25 L0,35 L-20,25 L-15,0 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
+               '<path d="M0,-45 L0,45 M-40,20 L40,20 M-25,-15 L25,-15 M0,0 L25,-15 M0,0 L40,20 M0,0 L0,45 M0,0 L-40,20 M0,0 L-25,-15 M0,0 L0,-45" style="--origami-fill: transparent; stroke-width: 1;"/>' +
+               '<path d="M-25,-15 L40,20 M25,-15 L-40,20 M0,-45 L-40,20 M0,-45 L40,20 L0,45 L-40,20" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>' +
+               '<circle cx="0" cy="0" r="5" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
       }
     ];
 
