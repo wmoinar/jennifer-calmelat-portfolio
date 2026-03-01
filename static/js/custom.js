@@ -169,6 +169,93 @@
   };
 
   /* ---------------------------------------------- /*
+	 * Dynamic Origami Engine (Section 3)
+	/* ---------------------------------------------- */
+  var currentOrigamiIndex = -1;
+  var origamiTimeout = null;
+
+  NAY.DrawOrigami = function (idx) {
+    if (idx === currentOrigamiIndex || idx < 0) return;
+    currentOrigamiIndex = idx;
+    
+    var canvas = document.getElementById('origami-canvas');
+    if (!canvas) return;
+    var layerBack = document.getElementById('origami-layer-back');
+    var layerFront = document.getElementById('origami-layer-front');
+    if (!layerBack || !layerFront) return;
+
+    // The 6 geometric definitions representing the competencies
+    var shapes = [
+      // 0: PSEAH & Fraud (Shield)
+      {
+        back: '<polygon points="-25,-25 25,-25 25,10 0,35 -25,10" style="--origami-fill: rgba(74, 144, 226, 0.15)"/>',
+        front: '<path d="M-20,-20 L20,-20 L20,8 L0,28 L-20,8 Z" style="--origami-fill: rgba(74, 144, 226, 0.25)"/><line x1="0" y1="-20" x2="0" y2="28" style="stroke: rgba(255,255,255,0.4);"/><circle cx="0" cy="4" r="6" style="--origami-fill: rgba(255,255,255,0.8); stroke: none;"/>'
+      },
+      // 1: Project Management (Connected Nodes/Blocks)
+      {
+        back: '<polygon points="-30,0 0,-15 30,0 0,15" style="--origami-fill: rgba(80, 227, 194, 0.15)"/><polygon points="-30,0 0,15 0,35 -30,20" style="--origami-fill: rgba(80, 227, 194, 0.1)"/><polygon points="30,0 0,15 0,35 30,20" style="--origami-fill: rgba(80, 227, 194, 0.05)"/>',
+        front: '<circle cx="-20" cy="-5" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="20" cy="-5" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="0" cy="25" r="4" style="--origami-fill: rgba(255,255,255,0.8)"/><circle cx="0" cy="-25" r="5" style="--origami-fill: rgba(80, 227, 194, 0.9); stroke: none;"/><path d="M-20,-5 L0,-25 L20,-5 L0,25 Z" style="--origami-fill: transparent"/>'
+      },
+      // 2: Compliance (Scales/Balance)
+      {
+        back: '<polygon points="-10,-30 10,-30 15,35 -15,35" style="--origami-fill: rgba(245, 166, 35, 0.1)"/><circle cx="-25" cy="15" r="12" style="--origami-fill: rgba(245, 166, 35, 0.15)"/><circle cx="25" cy="15" r="12" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>',
+        front: '<line x1="0" y1="-25" x2="0" y2="30"/><line x1="-30" y1="-5" x2="30" y2="-5"/><path d="M-30,-5 L-35,15 L-15,15 Z" style="--origami-fill: rgba(245, 166, 35, 0.25)"/><path d="M30,-5 L15,15 L35,15 Z" style="--origami-fill: rgba(245, 166, 35, 0.25)"/><circle cx="0" cy="-5" r="3" style="--origami-fill: #fff; stroke: none;"/>'
+      },
+      // 3: Case Management (Stacked Folders)
+      {
+        back: '<polygon points="-20,-25 15,-25 25,-15 25,25 -20,25" style="--origami-fill: rgba(184, 233, 134, 0.15)"/><polygon points="-15,-20 20,-20 30,-10 30,30 -15,30" style="--origami-fill: rgba(184, 233, 134, 0.1)"/>',
+        front: '<polygon points="-25,-15 -10,-15 -5,-5 30,-5 30,30 -25,30" style="--origami-fill: rgba(184, 233, 134, 0.3)"/><line x1="-15" y1="5" x2="15" y2="5"/><line x1="-15" y1="15" x2="20" y2="15"/>'
+      },
+      // 4: Review (Magnifying Lens / Target)
+      {
+        back: '<circle cx="0" cy="-5" r="22" style="--origami-fill: rgba(144, 19, 254, 0.1)"/><polygon points="12,12 30,30 20,40 2,22" style="--origami-fill: rgba(144, 19, 254, 0.15)"/>',
+        front: '<circle cx="0" cy="-5" r="16" style="--origami-fill: rgba(144, 19, 254, 0.2)"/><circle cx="0" cy="-5" r="6" style="--origami-fill: rgba(255, 255, 255, 0.8)"/><line x1="12" y1="7" x2="28" y2="23" style="stroke-width:4;"/><line x1="-25" y1="-5" x2="-35" y2="-5" style="stroke: rgba(255,255,255,0.4);"/><line x1="0" y1="-30" x2="0" y2="-40" style="stroke: rgba(255,255,255,0.4);"/>'
+      },
+      // 5: Training & Capacity (Upward Arrow / Growth)
+      {
+        back: '<polygon points="-30,30 0,5 30,30" style="--origami-fill: rgba(255, 107, 107, 0.1)"/><polygon points="-15,15 0,-10 15,15" style="--origami-fill: rgba(255, 107, 107, 0.15)"/>',
+        front: '<polygon points="0,-35 -20,-5 -5,-5 -5,35 5,35 5,-5 20,-5" style="--origami-fill: rgba(255, 107, 107, 0.3)"/><circle cx="0" cy="-20" r="3" style="--origami-fill: #fff; stroke: none;"/>'
+      }
+    ];
+
+    var shape = shapes[idx];
+    if (!shape) return;
+
+    // Reset Classes (hides strokes and fills)
+    canvas.classList.remove('drawing', 'filled');
+    
+    // Inject the new raw SVG strings into the DOM
+    layerBack.innerHTML = shape.back;
+    layerFront.innerHTML = shape.front;
+
+    // CSS trick for SVG line drawing animation:
+    // We get the exact length of each path/polygon, set its gap to that length,
+    // and push its offset all the way out so it's initially invisible.
+    var allElements = canvas.querySelectorAll('path, polygon, circle, line');
+    allElements.forEach(function(el) {
+      // getBoundingClientRect/getTotalLength estimation (fallback for polygons)
+      var length = 300; 
+      if (el.getTotalLength) {
+        length = el.getTotalLength() + 20; // +20 buffer
+      }
+      el.style.strokeDasharray = length;
+      el.style.strokeDashoffset = length;
+    });
+
+    // small delay allows the DOM injection and CSS changes to register
+    clearTimeout(origamiTimeout);
+    origamiTimeout = setTimeout(function() {
+      // 1. Draw the lines (CSS transition triggers)
+      canvas.classList.add('drawing');
+      
+      // 2. Fade in the background fill colors shortly after drawing starts
+      setTimeout(function() {
+        canvas.classList.add('filled');
+      }, 500); // Fills start fading in halfway through the draw
+    }, 50);
+  };
+
+  /* ---------------------------------------------- /*
 	 * Section 3 (Competencies) Sticky Scroll Animation
 	 * Items 01-06 reveal one by one as user scrolls
 	/* ---------------------------------------------- */
@@ -264,15 +351,9 @@
         activeImgIndex = 0;
       }
 
-      // Update the dynamic images classes
-      if (dynamicImgs.length > 0) {
-        for (var d = 0; d < dynamicImgs.length; d++) {
-          if (d === activeImgIndex) {
-            dynamicImgs[d].classList.add("active");
-          } else {
-            dynamicImgs[d].classList.remove("active");
-          }
-        }
+      // Draw the origami canvas shapes based on the active index
+      if (typeof NAY.DrawOrigami === 'function') {
+        NAY.DrawOrigami(activeImgIndex);
       }
 
       // Right column wrapper: toggle .show-stats class just before stat items start

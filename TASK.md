@@ -705,7 +705,7 @@ The text blocks (bullet points) in the "Work Experience" section are currently l
 
 ## T27 · Generate Images for Key Competencies
 
-**Status**: `todo`
+**Status**: `cancelled`
 **Priority**: Medium
 **Depends on**: nothing
 **Files**: `index.html`
@@ -719,3 +719,25 @@ The "Key Competencies" section dynamically displays information as the user scro
 - Generate one image per competency listed in Section 3.
 - All images must follow a cohesive, premium design style suitable for an Awwwards-winning portfolio.
 - Load the final images into the project once approved.
+
+---
+
+## T28 · Dynamic Origami Animation for Key Competencies
+
+**Status**: `todo`
+**Priority**: High
+**Depends on**: nothing
+**Files**: `index.html`, `static/style/master.css`, `static/js/custom.js`
+
+### Problem
+
+Instead of static images, the user requested a highly interactive, dynamic "origami-style" drawing algorithm for the Key Competencies section. As the user scrolls, an SVG shape representing the active competency should dynamically draw and fold itself on the screen.
+
+### Acceptance Criteria
+
+- Replace the 6 `.comp-dynamic-img` elements with a single responsive `<svg>` container.
+- Use JavaScript and CSS to inject and animate mathematically generated geometric shapes (representing each skill).
+- The transition between scroll states should trigger a smooth morph or redraw of the SVG shapes.
+- The shapes should resemble folded origami or wireframe blueprints that "build" themselves.
+- Ensure the JavaScript matches `activeIdx` and works perfectly with the existing scroll mathematics.
+- Do not commit or mark as done until the user tests and approves.

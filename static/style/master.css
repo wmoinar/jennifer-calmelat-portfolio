@@ -7222,24 +7222,65 @@ h6 {
   transition: opacity 0.5s ease, visibility 0s 0.5s;
 }
 
-.comp-dynamic-img {
+/* ── Dynamic Origami Canvas ─────────────────────────────── */
+#origami-canvas {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* fill the area perfectly */
-  opacity: 0;
-  transform: scale(0.95);
-  transition: 
-    opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1),
-    transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+  z-index: 2;
+  /* subtle floating animation */
+  animation: origamiFloat 8s ease-in-out infinite;
 }
 
-.comp-dynamic-img.active {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 2;
+@keyframes origamiFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+#origami-canvas path, 
+#origami-canvas polygon, 
+#origami-canvas circle, 
+#origami-canvas line {
+  /* Default state: invisible stroke, no fill */
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  
+  /* Drop shadow gives the wires a glowing/3D edge */
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+  
+  /* We will manipulate stroke-dasharray and dashoffset via JS for the drawing effect */
+  transition: fill 0.8s ease-out, stroke-dashoffset 1.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+}
+
+/* Layer specific styling: back layer is darker/faded for depth */
+#origami-layer-back path, 
+#origami-layer-back polygon, 
+#origami-layer-back circle,
+#origami-layer-back line {
+  stroke: rgba(200, 200, 200, 0.4);
+  filter: blur(1px) drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+/* State Classes applied by JavaScript */
+.origami-shape.drawing path,
+.origami-shape.drawing polygon,
+.origami-shape.drawing circle,
+.origami-shape.drawing line {
+  stroke-dashoffset: 0 !important; /* Forces the line to draw */
+}
+
+/* When the drawing hits ~80%, JS adds .filled to fade in the polygon backgrounds */
+.origami-shape.filled path,
+.origami-shape.filled polygon,
+.origami-shape.filled circle {
+  /* Fill will be picked up from the element's inline style or data attribute */
+  fill: var(--origami-fill, rgba(255, 255, 255, 0.1));
 }
 
 /* ── Stats Wrapper ───────────────────────────────────────── */
