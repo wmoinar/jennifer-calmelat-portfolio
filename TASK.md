@@ -642,3 +642,42 @@ The rounding effect on scroll at the bottom of the Hero section and around the C
 - Updated `NAY.HeroDarken` and `NAY.CompetenciesReveal` in `custom.js` to use a standardized maximum radius.
 - Replaced the hardcoded values with variables: `80px` for desktop and `40px` for mobile.
 - This creates a subtler, homogenous curve across all animated sections.
+
+## T24 · Hero Scroll Indicator Hide on Scroll
+
+**Status**: `done`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/custom.js`, `static/style/master.css`
+
+### Problem
+
+The mouse scroll animation in Section 1 (Hero) stays visible while scrolling. The user wants it to fade out intelligently as soon as scrolling down begins, and reappear only when the user scrolls completely back to the top of the section.
+
+### Acceptance Criteria
+
+- Scroll indicator fades out gracefully when `window.scrollY` goes above a small threshold.
+- Scroll indicator fades back in when the user is at the very top.
+- The indicator is responsive and positions correctly on all screen sizes.
+- NO automatic commits or closing the task until the user explicitly approves.
+
+---
+
+## T25 · Smooth Mobile Scroll Animations
+
+**Status**: `todo`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `static/js/custom.js`, `index.html`, `static/style/master.css`
+
+### Problem
+
+In mobile view (< 991px), the scroll animations for Section 2 (About) and Section 3 (Competencies) are completely disabled. Currently, the content appears statically as the user scrolls, which feels abrupt and lacks the premium feel of the desktop experience.
+
+### Acceptance Criteria
+
+- Implement a graceful, directional "Fade In Up" animation for mobile devices.
+- As the user scrolls down on mobile, elements in Section 2 and 3 should smoothly fade in and slide up slightly.
+- The animation should use `IntersectionObserver` (or similar performance-friendly API) rather than heavy math calculations on scroll, preserving 60fps on mobile devices.
+- Desktop animations (`>= 992px`) remain strictly untouched (using the existing `position: sticky` and requestAnimationFrame logic).
+- Do not commit or mark as done until the user tests and approves the behavior.
