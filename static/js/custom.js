@@ -239,6 +239,9 @@
       var skillChunk = skillRange / N;
       var skillStart = 0.05;
       var skillRevealDur = skillChunk * 0.75;
+      
+      var activeImgIndex = -1;
+      var dynamicImgs = rightCol ? rightCol.querySelectorAll(".comp-dynamic-img") : [];
 
       for (var i = 0; i < N; i++) {
         var itemStart = skillStart + i * skillChunk;
@@ -247,11 +250,41 @@
         );
         rows[i].style.opacity = t;
         rows[i].style.transform = "translateY(" + (1 - t) * 28 + "px)";
+        
+        // Track the currently active image based on scroll progress
+        // An image becomes "active" when its corresponding row is at least 30% revealed
+        // and before the next row reaches 30% reveal.
+        if (progress >= itemStart + (skillRevealDur * 0.3)) {
+          activeImgIndex = i;
+        }
       }
 
-      // Right column wrapper: snap visible just before stat items start
+      // Special case: before the first item starts, show the first image if we are scrolling down
+      if (progress > 0 && activeImgIndex === -1) {
+        activeImgIndex = 0;
+      }
+
+      // Update the dynamic images classes
+      if (dynamicImgs.length > 0) {
+        for (var d = 0; d < dynamicImgs.length; d++) {
+          if (d === activeImgIndex) {
+            dynamicImgs[d].classList.add("active");
+          } else {
+            dynamicImgs[d].classList.remove("active");
+          }
+        }
+      }
+
+      // Right column wrapper: toggle .show-stats class just before stat items start
+      // Also ensure the right column base container is fully opaque immediately
       if (rightCol) {
-        rightCol.style.opacity = progress >= 0.66 ? "1" : "0";
+        rightCol.style.opacity = progress > 0.01 ? "1" : "0"; // Always visible once scroll starts
+        
+        if (progress >= 0.66) {
+          rightCol.classList.add("show-stats");
+        } else {
+          rightCol.classList.remove("show-stats");
+        }
       }
 
       // 4 stat items: staggered over 68→88% (5% gap between each)
@@ -1226,11 +1259,21 @@
     var panels = scrollArea.querySelectorAll(".exp-panel");
     var counterEl = scrollArea.querySelector(".expertise-current-num");
     var progressFill = scrollArea.querySelector(".expertise-progress-fill");
+    
+    /* New references for dynamic images and stats wrapper */
+    var rightCol = document.querySelector(".comp-right-col");
+    var dynamicImgs = document.querySelectorAll(".comp-dynamic-img");
+
     var n = panels.length,
       activeIdx = 0;
 
-    for (var k = 0; k < n; k++) panels[k].classList.remove("active");
+    for (var k = 0; k < n; k++) {
+      panels[k].classList.remove("active");
+      if (dynamicImgs[k]) dynamicImgs[k].classList.remove("active");
+    }
     panels[0].classList.add("active");
+    if (dynamicImgs.length > 0) dynamicImgs[0].classList.add("active");
+    
     if (counterEl) counterEl.textContent = "01";
     if (progressFill) progressFill.style.height = (1 / n) * 100 + "%";
 
@@ -1253,10 +1296,28 @@
             : Math.min(Math.floor((scrolled / total) * n), n - 1);
 
       if (idx !== activeIdx) {
+        // Toggle text panels
         panels[activeIdx].classList.remove("active");
         panels[idx].classList.add("active");
+        
+        // Toggle dynamic images
+        if (dynamicImgs[activeIdx]) dynamicImgs[activeIdx].classList.remove("active");
+        if (dynamicImgs[idx]) dynamicImgs[idx].classList.add("active");
+
         activeIdx = idx;
       }
+
+      // Show stats only when scrolling at the very end (last panel)
+      if (rightCol) {
+        // threshold: show stats when reaching the last 5% of the scroll area
+        var progress = scrolled / total;
+        if (progress > 0.95) {
+          rightCol.classList.add("show-stats");
+        } else {
+          rightCol.classList.remove("show-stats");
+        }
+      }
+
       if (counterEl) counterEl.textContent = String(idx + 1).padStart(2, "0");
       if (progressFill) progressFill.style.height = ((idx + 1) / n) * 100 + "%";
     }
