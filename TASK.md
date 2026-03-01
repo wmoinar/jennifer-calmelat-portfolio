@@ -665,7 +665,7 @@ The mouse scroll animation in Section 1 (Hero) stays visible while scrolling. Th
 
 ## T25 · Smooth Mobile Scroll Animations
 
-**Status**: `todo`
+**Status**: `done`
 **Priority**: Medium
 **Depends on**: nothing
 **Files**: `static/js/custom.js`, `index.html`, `static/style/master.css`
@@ -681,3 +681,22 @@ In mobile view (< 991px), the scroll animations for Section 2 (About) and Sectio
 - The animation should use `IntersectionObserver` (or similar performance-friendly API) rather than heavy math calculations on scroll, preserving 60fps on mobile devices.
 - Desktop animations (`>= 992px`) remain strictly untouched (using the existing `position: sticky` and requestAnimationFrame logic).
 - Do not commit or mark as done until the user tests and approves the behavior.
+
+---
+
+## T26 · Justify Text in Work Experience
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `static/style/master.css`
+
+### Problem
+
+The text blocks (bullet points) in the "Work Experience" section are currently left-aligned, creating a ragged right edge that looks untidy. The user wants the text to be justified to create a cleaner, more readable block of text.
+
+### Acceptance Criteria
+
+- Set text alignment to `justify` for paragraphs and list items within the `#experience` section.
+- Ensure the hyphens and spacing look appropriate (no massive gaps between words).
+- Do not commit or mark as done until the user approves.
