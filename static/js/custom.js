@@ -50,8 +50,8 @@
     var heroH = hero.offsetHeight;
 
     // Animate border radius from 0 to 48px over the first 300px of scroll
-    var radiusProgress = Math.min(scrolled / 400, 1.2);
-    var currentRadius = radiusProgress * 120; // max 48px
+    var radiusProgress = Math.min(scrolled / 200, 1);
+    var currentRadius = radiusProgress * 100; // max 48px
     hero.style.borderRadius =
       "0 0 " + currentRadius + "px " + currentRadius + "px";
 
