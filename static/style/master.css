@@ -8621,6 +8621,22 @@ h6 {
 }
 
 /* ============================================================
+   T25: Mobile Smooth Reveal Animations
+   ============================================================ */
+@media (max-width: 991px) {
+  .mobile-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .mobile-reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================
    T9: Work Experience — Premium Scroll-Driven Timeline
    ============================================================ */
 

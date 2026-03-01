@@ -129,6 +129,46 @@
   };
 
   /* ---------------------------------------------- /*
+	 * Mobile Smooth Reveal Animations (T25)
+	/* ---------------------------------------------- */
+  NAY.MobileReveal = function () {
+    if (window.innerWidth > 991) return;
+
+    var elementsToReveal = document.querySelectorAll(
+      ".about-img-reveal, .about-fade-item, .comp-skill-row, .comp-stat-item"
+    );
+
+    if (!elementsToReveal.length) return;
+
+    // Remove any inline styles left over from desktop calculations
+    elementsToReveal.forEach(function (el) {
+      el.style.opacity = "";
+      el.style.transform = "";
+      el.classList.add("mobile-reveal");
+    });
+
+    var observer = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target); // only animate once
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px 0px -50px 0px", // Trigger slightly before fully in view
+        threshold: 0.1,
+      }
+    );
+
+    elementsToReveal.forEach(function (el) {
+      observer.observe(el);
+    });
+  };
+
+  /* ---------------------------------------------- /*
 	 * Section 3 (Competencies) Sticky Scroll Animation
 	 * Items 01-06 reveal one by one as user scrolls
 	/* ---------------------------------------------- */
@@ -1515,6 +1555,7 @@
     NAY.EducationReveal();
     NAY.SectionRadius();
     NAY.ScrollIndicatorHide();
+    NAY.MobileReveal();
 
     // Initialize translations with default language
     var defaultLang = $("body").attr("data-lang") || "en";
