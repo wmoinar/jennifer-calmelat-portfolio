@@ -178,116 +178,77 @@
     if (idx === currentOrigamiIndex || idx < 0) return;
     currentOrigamiIndex = idx;
     
-    var canvas = document.getElementById('origami-canvas');
-    if (!canvas) return;
-    var layerBack = document.getElementById('origami-layer-back');
-    var layerFront = document.getElementById('origami-layer-front');
-    if (!layerBack || !layerFront) return;
-
-    // High-complexity 3D/Isometric geometric patterns for a premium "origami wireframe" aesthetic
+    // The 6 morphing geometric origami shapes
+    // Each MUST have exactly 6 triangles defined by M x,y L x,y L x,y Z
+    // They are grouped as arrays of exactly 6 facet objects: {d: "path...", fill: "color"}
     var shapes = [
-      // 0: PSEAH & Fraud (Intricate Nested Shield & Aperture)
-      {
-        back: '<polygon points="-30,-30 30,-30 40,10 0,55 -40,10" style="--origami-fill: rgba(74, 144, 226, 0.08)"/>' +
-              '<polygon points="-20,-15 20,-15 25,12 0,38 -25,12" style="--origami-fill: rgba(74, 144, 226, 0.12)"/>' +
-              '<polygon points="0,-30 -30,-30 -40,10 0,55" style="--origami-fill: rgba(74, 144, 226, 0.05)"/>',
-        front: '<path d="M-30,-30 L30,-30 L40,10 L0,55 L-40,10 Z M-20,-15 L20,-15 L25,12 L0,38 L-25,12 Z M-10,-5 L10,-5 L15,8 L0,22 L-15,8 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M0,55 L0,-30 M-40,10 L40,10 M-25,12 L25,12 M-15,8 L15,8" style="--origami-fill: transparent; stroke-width: 0.8; stroke: rgba(255,255,255,0.4);"/>' +
-               '<circle cx="0" cy="5" r="12" style="--origami-fill: transparent; stroke-width: 1.5;"/>' +
-               '<circle cx="0" cy="5" r="4" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
-      },
-      // 1: Project Management (Complex Hypercube / Network)
-      {
-        back: '<polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" style="--origami-fill: rgba(80, 227, 194, 0.08)"/>' +
-              '<polygon points="0,-20 18,-10 18,10 0,20 -18,10 -18,-10" style="--origami-fill: rgba(80, 227, 194, 0.12)"/>' +
-              '<polygon points="0,0 35,-20 0,-40 -35,-20" style="--origami-fill: rgba(80, 227, 194, 0.05)"/>' +
-              '<polygon points="0,0 35,20 35,-20" style="--origami-fill: rgba(80, 227, 194, 0.02)"/>',
-        front: '<path d="M0,-40 L35,-20 L35,20 L0,40 L-35,20 L-35,-20 Z M0,-20 L18,-10 L18,10 L0,20 L-18,10 L-18,-10 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M0,-40 L0,-20 M35,-20 L18,-10 M35,20 L18,10 M0,40 L0,20 M-35,20 L-18,10 M-35,-20 L-18,-10" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<path d="M-35,-20 L35,20 M-35,20 L35,-20 M0,-40 L0,40 M-35,0 L35,0" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>' +
-               '<circle cx="0" cy="0" r="6" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
-      },
-      // 2: Compliance (Geometric Scales / Balance structure)
-      {
-        back: '<polygon points="-40,-15 40,-15 30,-5 -30,-5" style="--origami-fill: rgba(245, 166, 35, 0.1)"/>' +
-              '<polygon points="-45,5 -25,5 -35,25" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>' +
-              '<polygon points="25,5 45,5 35,25" style="--origami-fill: rgba(245, 166, 35, 0.15)"/>' +
-              '<polygon points="-10,-30 10,-30 15,40 -15,40" style="--origami-fill: rgba(245, 166, 35, 0.05)"/>',
-        front: '<path d="M-10,-30 L10,-30 L15,40 L-15,40 Z M0,-30 L0,40 M-10,35 L10,35" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M-40,-15 L40,-15 L30,-5 L-30,-5 Z M-35,-10 L35,-10" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M-40,-15 L-45,5 L-25,5 L-30,-5 M-45,5 L-35,25 L-25,5 M-40,-15 L-35,25 L-30,-5" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<path d="M40,-15 L45,5 L25,5 L30,-5 M45,5 L35,25 L25,5 M40,-15 L35,25 L30,-5" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<circle cx="0" cy="-10" r="5" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
-      },
-      // 3: Case Management (Isometric Grid Building / Databases)
-      {
-        back: '<polygon points="0,-10 25,2 0,15 -25,2" style="--origami-fill: rgba(184, 233, 134, 0.15)"/>' +
-              '<polygon points="0,5 25,17 0,30 -25,17" style="--origami-fill: rgba(184, 233, 134, 0.1)"/>' +
-              '<polygon points="0,20 25,32 0,45 -25,32" style="--origami-fill: rgba(184, 233, 134, 0.05)"/>' +
-              '<polygon points="0,-30 25,-18 0,-5 -25,-18" style="--origami-fill: rgba(184, 233, 134, 0.2)"/>',
-        front: '<path d="M0,-30 L25,-18 L0,-5 L-25,-18 Z M0,-10 L25,2 L0,15 L-25,2 Z M0,5 L25,17 L0,30 L-25,17 Z M0,20 L25,32 L0,45 L-25,32 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M-25,-18 L-25,32 M25,-18 L25,32 M0,-5 L0,45" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<path d="M-12,-24 L12,0 M-12,-4 L12,20 M-12,11 L12,35 M12,-24 L-12,0 M12,-4 L-12,20 M12,11 L-12,35" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>'
-      },
-      // 4: Review (Gyroscope / Complex Optical Lens)
-      {
-        back: '<circle cx="0" cy="0" r="30" style="--origami-fill: rgba(144, 19, 254, 0.05)"/><circle cx="0" cy="0" r="20" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>' +
-              '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(45)" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>' +
-              '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(-45)" style="--origami-fill: rgba(144, 19, 254, 0.1)"/>',
-        front: '<circle cx="0" cy="0" r="30" style="--origami-fill: transparent; stroke-width: 1.2;"/><circle cx="0" cy="0" r="20" style="--origami-fill: transparent; stroke-width: 1.5;"/><circle cx="0" cy="0" r="10" style="--origami-fill: transparent; stroke-width: 0.8;"/>' +
-               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(45)" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(-45)" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(90)" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.5);"/>' +
-               '<ellipse cx="0" cy="0" rx="35" ry="10" transform="rotate(0)" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.5);"/>' +
-               '<circle cx="0" cy="0" r="4" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
-      },
-      // 5: Training & Capacity (Intricate Crystal / Seed of Life geometry)
-      {
-        back: '<polygon points="0,-45 25,-15 40,20 0,45 -40,20 -25,-15" style="--origami-fill: rgba(255, 107, 107, 0.05)"/>' +
-              '<polygon points="0,-25 15,0 20,25 0,35 -20,25 -15,0" style="--origami-fill: rgba(255, 107, 107, 0.1)"/>' +
-              '<polygon points="0,-45 40,20 0,0 -40,20" style="--origami-fill: rgba(255, 107, 107, 0.08)"/>',
-        front: '<path d="M0,-45 L25,-15 L40,20 L0,45 L-40,20 L-25,-15 Z M0,-25 L15,0 L20,25 L0,35 L-20,25 L-15,0 Z" style="--origami-fill: transparent; stroke-width: 1.2;"/>' +
-               '<path d="M0,-45 L0,45 M-40,20 L40,20 M-25,-15 L25,-15 M0,0 L25,-15 M0,0 L40,20 M0,0 L0,45 M0,0 L-40,20 M0,0 L-25,-15 M0,0 L0,-45" style="--origami-fill: transparent; stroke-width: 1;"/>' +
-               '<path d="M-25,-15 L40,20 M25,-15 L-40,20 M0,-45 L-40,20 M0,-45 L40,20 L0,45 L-40,20" style="--origami-fill: transparent; stroke-width: 0.5; stroke: rgba(255,255,255,0.3);"/>' +
-               '<circle cx="0" cy="0" r="5" style="--origami-fill: rgba(255,255,255,0.9); stroke: none;"/>'
-      }
+      // 0: Paper Plane (PSEAH) - High Contrast
+      [
+        { d: "M 0,-40 L -20,15 L 0,15 Z", fill: "#ffffff" },
+        { d: "M 0,-40 L 20,15 L 0,15 Z", fill: "#e2e8f0" },
+        { d: "M 0,-40 L -30,20 L -20,15 Z", fill: "#cbd5e1" },
+        { d: "M 0,-40 L 30,20 L 20,15 Z", fill: "#94a3b8" },
+        { d: "M 0,15 L -20,15 L 0,30 Z", fill: "#f8fafc" },
+        { d: "M 0,15 L 20,15 L 0,30 Z", fill: "#cbd5e1" }
+      ],
+      // 1: Diamond (Project Management) - Tightly folded multifaceted block
+      [
+        { d: "M 0,-30 L -20,-10 L 0,0 Z", fill: "#ffffff" },
+        { d: "M 0,-30 L 20,-10 L 0,0 Z", fill: "#f1f5f9" },
+        { d: "M -20,-10 L -30,10 L 0,0 Z", fill: "#cbd5e1" },
+        { d: "M 20,-10 L 30,10 L 0,0 Z", fill: "#e2e8f0" },
+        { d: "M -30,10 L 0,35 L 0,0 Z", fill: "#94a3b8" },
+        { d: "M 30,10 L 0,35 L 0,0 Z", fill: "#cbd5e1" }
+      ],
+      // 2: Shield / Scales (Compliance)
+      [
+        { d: "M 0,-25 L -25,-25 L 0,-5 Z", fill: "#e2e8f0" },
+        { d: "M 0,-25 L 25,-25 L 0,-5 Z", fill: "#ffffff" },
+        { d: "M -25,-25 L -25,5 L 0,-5 Z", fill: "#94a3b8" },
+        { d: "M 25,-25 L 25,5 L 0,-5 Z", fill: "#cbd5e1" },
+        { d: "M -25,5 L 0,35 L 0,-5 Z", fill: "#cbd5e1" },
+        { d: "M 25,5 L 0,35 L 0,-5 Z", fill: "#f1f5f9" }
+      ],
+      // 3: Opened Box / Folder (Case Management)
+      [
+        { d: "M 0,10 L -25,-5 L -25,20 Z", fill: "#cbd5e1" },
+        { d: "M 0,10 L 25,-5 L 25,20 Z", fill: "#e2e8f0" },
+        { d: "M -25,20 L 0,35 L 0,10 Z", fill: "#94a3b8" },
+        { d: "M 25,20 L 0,35 L 0,10 Z", fill: "#cbd5e1" },
+        { d: "M -25,-5 L 0,-20 L 0,10 Z", fill: "#ffffff" },
+        { d: "M 25,-5 L 0,-20 L 0,10 Z", fill: "#f1f5f9" }
+      ],
+      // 4: Crane / Bird (Review) - Profile folded bird
+      [
+        { d: "M -10,10 L 15,5 L 0,25 Z", fill: "#cbd5e1" },
+        { d: "M 15,5 L 25,15 L 0,25 Z", fill: "#e2e8f0" },
+        { d: "M 15,5 L 25,-15 L 20,0 Z", fill: "#f1f5f9" },
+        { d: "M 25,-15 L 35,-10 L 20,0 Z", fill: "#ffffff" },
+        { d: "M -10,10 L -30,-20 L 15,5 Z", fill: "#ffffff" },
+        { d: "M -10,10 L 0,-30 L 15,5 Z", fill: "#cbd5e1" }
+      ],
+      // 5: Arrow / Star Ribbon (Capacity Building)
+      [
+        { d: "M -8,30 L 0,30 L 0,0 Z", fill: "#cbd5e1" },
+        { d: "M 0,30 L 8,30 L 0,0 Z", fill: "#e2e8f0" },
+        { d: "M -8,0 L -25,0 L 0,0 Z", fill: "#94a3b8" },
+        { d: "M 8,0 L 25,0 L 0,0 Z", fill: "#cbd5e1" },
+        { d: "M -25,0 L 0,-35 L 0,0 Z", fill: "#ffffff" },
+        { d: "M 25,0 L 0,-35 L 0,0 Z", fill: "#f1f5f9" }
+      ]
     ];
 
     var shape = shapes[idx];
     if (!shape) return;
 
-    // Reset Classes (hides strokes and fills)
-    canvas.classList.remove('drawing', 'filled');
-    
-    // Inject the new raw SVG strings into the DOM
-    layerBack.innerHTML = shape.back;
-    layerFront.innerHTML = shape.front;
-
-    // CSS trick for SVG line drawing animation:
-    // We get the exact length of each path/polygon, set its gap to that length,
-    // and push its offset all the way out so it's initially invisible.
-    var allElements = canvas.querySelectorAll('path, polygon, circle, line');
-    allElements.forEach(function(el) {
-      // getBoundingClientRect/getTotalLength estimation (fallback for polygons)
-      var length = 300; 
-      if (el.getTotalLength) {
-        length = el.getTotalLength() + 20; // +20 buffer
+    // Apply the 6 triangle definitions directly to the DOM to trigger CSS morphing
+    for (var i = 0; i < 6; i++) {
+      var pathEl = document.getElementById('poly' + (i + 1));
+      if (pathEl) {
+        pathEl.setAttribute('d', shape[i].d);
+        pathEl.setAttribute('fill', shape[i].fill);
       }
-      el.style.strokeDasharray = length;
-      el.style.strokeDashoffset = length;
-    });
-
-    // small delay allows the DOM injection and CSS changes to register
-    clearTimeout(origamiTimeout);
-    origamiTimeout = setTimeout(function() {
-      // 1. Draw the lines (CSS transition triggers)
-      canvas.classList.add('drawing');
-      
-      // 2. Fade in the background fill colors shortly after drawing starts
-      setTimeout(function() {
-        canvas.classList.add('filled');
-      }, 500); // Fills start fading in halfway through the draw
-    }, 50);
+    }
   };
 
   /* ---------------------------------------------- /*
