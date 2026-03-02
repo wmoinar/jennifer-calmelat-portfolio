@@ -7513,6 +7513,8 @@ h6 {
   pointer-events: none;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 .exp-panel.active {
   opacity: 1;
@@ -7520,18 +7522,22 @@ h6 {
   pointer-events: auto;
 }
 .exp-panel-inner {
-  padding: 0 8% 0 9%;
+  padding: 0 8%;
   max-width: 540px;
+  margin: 0 auto;
+  position: relative;
 }
 .exp-panel-num {
-  display: block;
+  position: absolute;
+  top: -0.35em;
+  left: 8%;
   font-family: "Playfair Display", serif;
   font-size: clamp(80px, 10vw, 140px);
   font-weight: 700;
   color: rgba(80, 153, 223, 0.08);
   line-height: 1;
-  margin-bottom: -0.15em;
   user-select: none;
+  pointer-events: none;
 }
 .exp-panel-title {
   font-family: "Playfair Display", serif;

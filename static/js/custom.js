@@ -1257,6 +1257,8 @@
     }
 
     var ctx = canvas.getContext("2d");
+    // Use the canvas parent (.expertise-right) for sizing so particles stay in right col
+    var canvasParent = canvas.parentElement;
     var mouse = { x: -9999, y: -9999 };
     var rafId = null;
     var W = 0,
@@ -1269,8 +1271,8 @@
       CB = 223;
 
     function resize() {
-      W = canvas.width = stickyEl.offsetWidth;
-      H = canvas.height = stickyEl.offsetHeight;
+      W = canvas.width = canvasParent.offsetWidth;
+      H = canvas.height = canvasParent.offsetHeight;
       // ~1 col per 13 px, ~1 row per 11 px — high density
       COLS = Math.max(50, Math.min(85, Math.round(W / 13)));
       ROWS = Math.max(48, Math.min(75, Math.round(H / 11)));
@@ -1280,8 +1282,8 @@
       ctx.clearRect(0, 0, W, H);
       t += 0.002;
 
-      var cx = W * 0.67,
-        hw = W * 0.28;
+      var cx = W * 0.5,
+        hw = W * 0.35;
       var col, row, u, v, uNL, phaseU, envV, depth, amp;
       var p1, p2, p3, yD, xD, sx, sy, dx, dy, md, mf, size, alpha;
 

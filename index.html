@@ -1812,9 +1812,6 @@
         <!-- Scroll area: creates 350vh of scrollable height for sticky pinning -->
         <div class="expertise-scroll-area">
           <div class="expertise-sticky">
-            <!-- Canvas particle wave layer -->
-            <canvas id="expertise-canvas"></canvas>
-
             <!-- LEFT: sticky title + counter -->
             <div class="expertise-left">
               <div class="expertise-left-inner">
@@ -1833,6 +1830,8 @@
 
             <!-- RIGHT: 6 scroll-driven content panels -->
             <div class="expertise-right">
+              <!-- Canvas particle wave layer (inside right col to clip at dividing line) -->
+              <canvas id="expertise-canvas"></canvas>
               <div class="exp-panel active" data-panel="0">
                 <div class="exp-panel-inner">
                   <span class="exp-panel-num">01</span>
