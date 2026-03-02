@@ -7297,6 +7297,11 @@ h6 {
     opacity: 1 !important;
     transform: none !important;
   }
+  .comp-stats-wrapper {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+  }
   .comp-main-title {
     font-size: 28px;
     -webkit-text-fill-color: #1a1a2e;
