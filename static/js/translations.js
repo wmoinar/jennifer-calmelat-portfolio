@@ -2,6 +2,7 @@ window.translations = {
     "en": {
         "nav_home": "Home",
         "nav_about": "About Me",
+        "nav_competencies": "Competencies",
         "nav_expertise": "Expertise",
         "nav_experience": "Experience",
         "nav_education": "Education",
@@ -192,6 +193,7 @@ window.translations = {
     "fr": {
         "nav_home": "Accueil",
         "nav_about": "À Propos",
+        "nav_competencies": "Compétences",
         "nav_expertise": "Expertise",
         "nav_experience": "Expérience",
         "nav_education": "Éducation",
@@ -382,6 +384,7 @@ window.translations = {
     "es": {
         "nav_home": "Inicio",
         "nav_about": "Sobre Mí",
+        "nav_competencies": "Competencias",
         "nav_expertise": "Experiencia",
         "nav_experience": "Trayectoria",
         "nav_education": "Educación",
