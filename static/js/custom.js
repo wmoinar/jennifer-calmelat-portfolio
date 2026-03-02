@@ -168,88 +168,7 @@
     });
   };
 
-  /* ---------------------------------------------- /*
-	 * Dynamic Origami Engine (Section 3)
-	/* ---------------------------------------------- */
-  var currentOrigamiIndex = -1;
-  var origamiTimeout = null;
 
-  NAY.DrawOrigami = function (idx) {
-    if (idx === currentOrigamiIndex || idx < 0) return;
-    currentOrigamiIndex = idx;
-    
-    // The 6 morphing geometric origami shapes
-    // Each MUST have exactly 6 triangles defined by M x,y L x,y L x,y Z
-    // They are grouped as arrays of exactly 6 facet objects: {d: "path...", fill: "color"}
-    var shapes = [
-      // 0: Paper Plane (PSEAH) - High Contrast
-      [
-        { d: "M 0,-40 L -20,15 L 0,15 Z", fill: "#ffffff" },
-        { d: "M 0,-40 L 20,15 L 0,15 Z", fill: "#e2e8f0" },
-        { d: "M 0,-40 L -30,20 L -20,15 Z", fill: "#cbd5e1" },
-        { d: "M 0,-40 L 30,20 L 20,15 Z", fill: "#94a3b8" },
-        { d: "M 0,15 L -20,15 L 0,30 Z", fill: "#f8fafc" },
-        { d: "M 0,15 L 20,15 L 0,30 Z", fill: "#cbd5e1" }
-      ],
-      // 1: Diamond (Project Management) - Tightly folded multifaceted block
-      [
-        { d: "M 0,-30 L -20,-10 L 0,0 Z", fill: "#ffffff" },
-        { d: "M 0,-30 L 20,-10 L 0,0 Z", fill: "#f1f5f9" },
-        { d: "M -20,-10 L -30,10 L 0,0 Z", fill: "#cbd5e1" },
-        { d: "M 20,-10 L 30,10 L 0,0 Z", fill: "#e2e8f0" },
-        { d: "M -30,10 L 0,35 L 0,0 Z", fill: "#94a3b8" },
-        { d: "M 30,10 L 0,35 L 0,0 Z", fill: "#cbd5e1" }
-      ],
-      // 2: Shield / Scales (Compliance)
-      [
-        { d: "M 0,-25 L -25,-25 L 0,-5 Z", fill: "#e2e8f0" },
-        { d: "M 0,-25 L 25,-25 L 0,-5 Z", fill: "#ffffff" },
-        { d: "M -25,-25 L -25,5 L 0,-5 Z", fill: "#94a3b8" },
-        { d: "M 25,-25 L 25,5 L 0,-5 Z", fill: "#cbd5e1" },
-        { d: "M -25,5 L 0,35 L 0,-5 Z", fill: "#cbd5e1" },
-        { d: "M 25,5 L 0,35 L 0,-5 Z", fill: "#f1f5f9" }
-      ],
-      // 3: Opened Box / Folder (Case Management)
-      [
-        { d: "M 0,10 L -25,-5 L -25,20 Z", fill: "#cbd5e1" },
-        { d: "M 0,10 L 25,-5 L 25,20 Z", fill: "#e2e8f0" },
-        { d: "M -25,20 L 0,35 L 0,10 Z", fill: "#94a3b8" },
-        { d: "M 25,20 L 0,35 L 0,10 Z", fill: "#cbd5e1" },
-        { d: "M -25,-5 L 0,-20 L 0,10 Z", fill: "#ffffff" },
-        { d: "M 25,-5 L 0,-20 L 0,10 Z", fill: "#f1f5f9" }
-      ],
-      // 4: Crane / Bird (Review) - Profile folded bird
-      [
-        { d: "M -10,10 L 15,5 L 0,25 Z", fill: "#cbd5e1" },
-        { d: "M 15,5 L 25,15 L 0,25 Z", fill: "#e2e8f0" },
-        { d: "M 15,5 L 25,-15 L 20,0 Z", fill: "#f1f5f9" },
-        { d: "M 25,-15 L 35,-10 L 20,0 Z", fill: "#ffffff" },
-        { d: "M -10,10 L -30,-20 L 15,5 Z", fill: "#ffffff" },
-        { d: "M -10,10 L 0,-30 L 15,5 Z", fill: "#cbd5e1" }
-      ],
-      // 5: Arrow / Star Ribbon (Capacity Building)
-      [
-        { d: "M -8,30 L 0,30 L 0,0 Z", fill: "#cbd5e1" },
-        { d: "M 0,30 L 8,30 L 0,0 Z", fill: "#e2e8f0" },
-        { d: "M -8,0 L -25,0 L 0,0 Z", fill: "#94a3b8" },
-        { d: "M 8,0 L 25,0 L 0,0 Z", fill: "#cbd5e1" },
-        { d: "M -25,0 L 0,-35 L 0,0 Z", fill: "#ffffff" },
-        { d: "M 25,0 L 0,-35 L 0,0 Z", fill: "#f1f5f9" }
-      ]
-    ];
-
-    var shape = shapes[idx];
-    if (!shape) return;
-
-    // Apply the 6 triangle definitions directly to the DOM to trigger CSS morphing
-    for (var i = 0; i < 6; i++) {
-      var pathEl = document.getElementById('poly' + (i + 1));
-      if (pathEl) {
-        pathEl.setAttribute('d', shape[i].d);
-        pathEl.setAttribute('fill', shape[i].fill);
-      }
-    }
-  };
 
   /* ---------------------------------------------- /*
 	 * Section 3 (Competencies) Sticky Scroll Animation
@@ -347,10 +266,7 @@
         activeImgIndex = 0;
       }
 
-      // Draw the origami canvas shapes based on the active index
-      if (typeof NAY.DrawOrigami === 'function') {
-        NAY.DrawOrigami(activeImgIndex);
-      }
+
 
       // Right column wrapper: toggle .show-stats class just before stat items start
       // Also ensure the right column base container is fully opaque immediately
