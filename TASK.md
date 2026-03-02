@@ -801,3 +801,22 @@ The user wants to change their displayed location from "Alsace, France" to just 
 - Update the location in the "About" section.
 - Update the location in the "Contact" section.
 - Apply these changes across all translations (EN, FR, ES) in `translations.js` and `index.html`.
+
+---
+
+## T32 · Update Grammar: "Investigations Consultant" to "Investigation Consultant"
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/translations.js`
+
+### Problem
+
+Grammatically, "Investigation Consultant" is preferred over the pluralized "Investigations Consultant". The user wants this corrected throughout the site, including all translations.
+
+### Acceptance Criteria
+
+- Update "Investigations Consultant" to "Investigation Consultant" in the exact places shown in the user's screenshot (About Me subtitle, About Me bio introduction).
+- Ensure the translation files are updated accordingly, including FR ("Consultante en Investigations" -> "Consultante en Investigation" or equivalent grammar fix if needed) and ES ("Consultora en Investigaciones" -> "Consultora en Investigación").
+- Apply to title tags, header sections, and anywhere else "Investigations Consultant" appears.
