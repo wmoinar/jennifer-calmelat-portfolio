@@ -684,11 +684,20 @@
   // the scroll-area's scrollable height, so we add that offset on desktop.
   function scrollTopFor(target) {
     var top = target.offset().top;
-    if (target.attr("id") === "about" && window.innerWidth > 991) {
-      var scrollArea = document.querySelector("#about .about-scroll-area");
-      if (scrollArea) {
-        var scrollH = Math.max(0, scrollArea.offsetHeight - window.innerHeight);
-        top += Math.round(scrollH * 0.85);
+    if (target.attr("id") === "about") {
+      if (window.innerWidth > 991) {
+        // Desktop: skip the sticky scroll-area Phase 1 animation
+        var scrollArea = document.querySelector("#about .about-scroll-area");
+        if (scrollArea) {
+          var scrollH = Math.max(0, scrollArea.offsetHeight - window.innerHeight);
+          top += Math.round(scrollH * 0.85);
+        }
+      } else {
+        // Mobile: section has margin-top:-130px and .about-unified-container
+        // has padding-top:220px.  We need to offset so the "ABOUT ME" title
+        // sits comfortably just below the top of the viewport.
+        // Add 130 (negative margin) + a small extra breathing room.
+        top += 100;
       }
     }
     return top;
