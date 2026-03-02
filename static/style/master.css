@@ -7316,6 +7316,11 @@ h6 {
   .comp-lang-chip {
     padding: 12px 8px;
     gap: 8px;
+    justify-content: center;
+    text-align: center;
+  }
+  .comp-lang-grid {
+    justify-content: center;
   }
   .comp-lang-name {
     font-size: 12px;
