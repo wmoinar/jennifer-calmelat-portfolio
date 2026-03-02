@@ -693,24 +693,18 @@
           top += Math.round(scrollH * 0.85);
         }
       } else {
-        // Mobile: dynamically compute the offset so the "ABOUT ME" title
-        // sits just below the floating navbar on any screen size.
-        //
-        // Algorithm:
-        //   1. |margin-top| → how much the section overlaps the Hero
-        //   2. padding-top  → where the title content actually begins
-        //   3. navbarHeight → the floating nav we must clear
-        //   offset = |margin-top| + padding-top − navbarHeight − gap
-        var section = document.getElementById("about");
-        var container = section ? section.querySelector(".about-unified-container") : null;
+        // Mobile: instead of guessing margins/paddings, directly measure
+        // where the "ABOUT ME" title actually sits in the document.
+        // Then scroll so the title appears just below the floating navbar.
+        var titleEl = document.querySelector("#about .about-hero-title");
         var navbar = document.getElementById("topNavbar");
-
-        var negMargin = Math.abs(parseFloat(getComputedStyle(section).marginTop) || 0);
-        var padTop = container ? (parseFloat(getComputedStyle(container).paddingTop) || 0) : 0;
         var navH = navbar ? navbar.offsetHeight : 60;
-        var gap = 20; // breathing room below navbar
+        var gap = 15; // breathing room below navbar
 
-        top += negMargin + padTop - navH - gap;
+        if (titleEl) {
+          // Use the title's actual position — fully responsive to any layout
+          top = $(titleEl).offset().top - navH - gap;
+        }
       }
     }
     return top;
