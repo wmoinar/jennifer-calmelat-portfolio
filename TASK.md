@@ -873,3 +873,23 @@ The standalone language switcher button (e.g., "EN") located in the top right co
 
 - Ensure the Hero section's language switcher button is visible and accessible on mobile screens.
 - Adjust positioning or CSS media queries if necessary so it doesn't overlap with other mobile UI elements.
+
+---
+
+## T36 · Add Hover Descriptions to Certifications
+
+**Status**: `done`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `index.html`, `static/style/master.css`, `static/js/translations.js`
+
+### Problem
+
+The Certifications section lacks context. The user wants expert-level, clear, and concise descriptions for each certification that explain its importance, objective, and relevance. These should appear on hover with a smooth, subtle animation, and must be translated into all languages (EN, FR, ES).
+
+### Acceptance Criteria
+
+- Write concise, expert-level descriptions for all certifications in EN, FR, and ES.
+- Add these translations to `translations.js`.
+- Update the HTML structure of the certification cards in `index.html` to include these descriptions.
+- Add CSS to hide the descriptions by default and reveal them on hover with a smooth and subtle animation.
