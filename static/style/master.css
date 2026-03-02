@@ -6549,6 +6549,9 @@ h6 {
   color: #090a0c;
   margin: 0 0 20px;
 }
+.home-banner-01 h2 #type-it {
+  text-transform: lowercase;
+}
 @media (max-width: 991px) {
   .home-banner-01 h2 {
     font-size: 20px;

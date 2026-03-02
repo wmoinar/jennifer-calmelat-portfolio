@@ -9,7 +9,7 @@ window.translations = {
         
         "home_hello": "Hello, I'm",
         "home_title": "Jennifer Calmelat",
-        "home_subtitle_prefix": "I Am A Passionate",
+        "home_subtitle_prefix": "I am a passionate",
         "home_desc": "Over 13 years of dedicated experience in investigations, humanitarian protection, compliance, and project management across 15+ countries with leading international organizations.",
         "home_btn_exp": "My Experience",
         "home_btn_contact": "Contact Me",
@@ -195,7 +195,7 @@ window.translations = {
         
         "home_hello": "Bonjour, je suis",
         "home_title": "Jennifer Calmelat",
-        "home_subtitle_prefix": "Je suis une Passionnée",
+        "home_subtitle_prefix": "Je suis une passionnée",
         "home_desc": "Plus de 13 ans d'expérience dédiée aux enquêtes, à la protection humanitaire, à la conformité et à la gestion de projets dans plus de 15 pays avec des organisations internationales de premier plan.",
         "home_btn_exp": "Mon Expérience",
         "home_btn_contact": "Me Contacter",
@@ -381,7 +381,7 @@ window.translations = {
         
         "home_hello": "Hola, soy",
         "home_title": "Jennifer Calmelat",
-        "home_subtitle_prefix": "Soy una Apasionada",
+        "home_subtitle_prefix": "Soy una apasionada",
         "home_desc": "Más de 13 años de experiencia dedicada a investigaciones, protección humanitaria, cumplimiento y gestión de proyectos en más de 15 países con organizaciones internacionales líderes.",
         "home_btn_exp": "Mi Experiencia",
         "home_btn_contact": "Contáctame",
