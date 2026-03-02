@@ -7912,7 +7912,7 @@ h6 {
 #langSwitcherContainer {
   position: fixed !important;
   top: 28px !important; /* Vertically centered for ~85px header */
-  right: 90px !important; /* Aligned with standard padding of right-side elements */
+  right: 15px !important; /* Default for mobile < 576px */
   z-index: 9999 !important;
   background: none !important;
   padding: 0 !important;
@@ -7930,6 +7930,35 @@ h6 {
 /* Scrolled State Adjustment (via JS) */
 #langSwitcherContainer.scrolled {
   top: 18px !important; /* Slight adjust if header shrinks on scroll */
+}
+
+/* Responsive alignment to match standard .container width exactly */
+@media (min-width: 576px) {
+  #langSwitcherContainer {
+    right: calc((100vw - 540px) / 2 + 15px) !important;
+  }
+}
+@media (min-width: 768px) {
+  #langSwitcherContainer {
+    right: calc((100vw - 720px) / 2 + 15px) !important;
+  }
+}
+@media (min-width: 992px) {
+  #langSwitcherContainer {
+    right: calc((100vw - 960px) / 2 + 15px) !important;
+  }
+}
+@media (min-width: 1200px) {
+  #langSwitcherContainer {
+    right: calc((100vw - 1140px) / 2 + 15px) !important;
+  }
+}
+
+/* On mobile, adjust top position closer to the upper edge */
+@media (max-width: 991px) {
+  #langSwitcherContainer {
+    top: 15px !important;
+  }
 }
 
 #langSwitcherContainer button.lang-toggle {
