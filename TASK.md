@@ -855,3 +855,21 @@ After removing the 6th point ("Intercultural Mediation") in the "Areas of Expert
 ### Acceptance Criteria
 
 - Update the hardcoded total count string from "06" to "05" in the "Areas of Expertise" DOM slider controller (probably located in `index.html` or `custom.js`).
+
+---
+
+## T35 · Show Hero Language Switcher on Mobile
+
+**Status**: `done`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `index.html`, `static/style/master.css`
+
+### Problem
+
+The standalone language switcher button (e.g., "EN") located in the top right corner of the Hero section is visible on desktop but hidden on mobile devices.
+
+### Acceptance Criteria
+
+- Ensure the Hero section's language switcher button is visible and accessible on mobile screens.
+- Adjust positioning or CSS media queries if necessary so it doesn't overlap with other mobile UI elements.
