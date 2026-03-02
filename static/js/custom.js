@@ -879,12 +879,12 @@
         $("#type-it").empty();
 
         var lang = $("body").attr("data-lang") || "en";
-        var strings = ["Investigator", "Humanitarian", "Consultant"];
+        var strings = ["investigator", "humanitarian", "consultant"];
 
         if (lang === "fr") {
-          strings = ["Enquêtrice", "Humanitaire", "Consultante"];
+          strings = ["enquêtrice", "humanitaire", "consultante"];
         } else if (lang === "es") {
-          strings = ["Investigadora", "Humanitaria", "Consultora"];
+          strings = ["investigadora", "humanitaria", "consultora"];
         }
 
         // Initialize TypeIt with proper chaining

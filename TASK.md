@@ -741,3 +741,24 @@ Instead of static images, the user requested a highly interactive, dynamic "orig
 - The shapes should resemble folded origami or wireframe blueprints that "build" themselves.
 - Ensure the JavaScript matches `activeIdx` and works perfectly with the existing scroll mathematics.
 - Do not commit or mark as done until the user tests and approves.
+
+---
+
+## T29 · Fix Hero Subtitle Capitalization
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/translations.js`
+
+### Problem
+
+The Hero section subtitle prefix currently reads "I Am A Passionate" (Title Case). The user considers this incorrect for the editorial tone and wants it changed to sentence case, where only the first word is capitalized ("I am a passionate"), and this should be applied to all languages.
+
+### Acceptance Criteria
+
+- Update the text to only have the first letter capitalized.
+- EN: "I Am A Passionate" -> "I am a passionate"
+- FR: "Je Suis Une Passionnée" (or current) -> "Je suis une passionnée"
+- ES: "Soy Una Apasionada" (or current) -> "Soy una apasionada"
+- Ensure changes are made in both `index.html` (default text) and `translations.js`.
