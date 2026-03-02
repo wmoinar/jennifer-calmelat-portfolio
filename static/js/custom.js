@@ -693,11 +693,24 @@
           top += Math.round(scrollH * 0.85);
         }
       } else {
-        // Mobile: section has margin-top:-130px and .about-unified-container
-        // has padding-top:220px.  We need to offset so the "ABOUT ME" title
-        // sits comfortably just below the top of the viewport.
-        // Add enough to clear the hero overlap + breathing room.
-        top += 160;
+        // Mobile: dynamically compute the offset so the "ABOUT ME" title
+        // sits just below the floating navbar on any screen size.
+        //
+        // Algorithm:
+        //   1. |margin-top| → how much the section overlaps the Hero
+        //   2. padding-top  → where the title content actually begins
+        //   3. navbarHeight → the floating nav we must clear
+        //   offset = |margin-top| + padding-top − navbarHeight − gap
+        var section = document.getElementById("about");
+        var container = section ? section.querySelector(".about-unified-container") : null;
+        var navbar = document.getElementById("topNavbar");
+
+        var negMargin = Math.abs(parseFloat(getComputedStyle(section).marginTop) || 0);
+        var padTop = container ? (parseFloat(getComputedStyle(container).paddingTop) || 0) : 0;
+        var navH = navbar ? navbar.offsetHeight : 60;
+        var gap = 20; // breathing room below navbar
+
+        top += negMargin + padTop - navH - gap;
       }
     }
     return top;
