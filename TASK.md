@@ -762,3 +762,42 @@ The Hero section subtitle prefix currently reads "I Am A Passionate" (Title Case
 - FR: "Je Suis Une Passionnée" (or current) -> "Je suis une passionnée"
 - ES: "Soy Una Apasionada" (or current) -> "Soy una apasionada"
 - Ensure changes are made in both `index.html` (default text) and `translations.js`.
+
+---
+
+## T30 · Remove German Language References
+
+**Status**: `done`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/translations.js`
+
+### Problem
+
+The user wants to remove all references to the German language across the portfolio and update any text indicating "4 languages" to say "3 languages".
+
+### Acceptance Criteria
+
+- Remove "German" from the "About" section languages list.
+- Remove "German" from the "Key Competencies" section.
+- Update any mention of "4 languages" to "3 languages".
+- Apply these changes across all translations (EN, FR, ES) in `translations.js` and `index.html`.
+
+---
+
+## T31 · Update Location to "France"
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/translations.js`
+
+### Problem
+
+The user wants to change their displayed location from "Alsace, France" to just "France" throughout the portfolio.
+
+### Acceptance Criteria
+
+- Update the location in the "About" section.
+- Update the location in the "Contact" section.
+- Apply these changes across all translations (EN, FR, ES) in `translations.js` and `index.html`.
