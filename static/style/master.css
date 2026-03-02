@@ -7182,57 +7182,7 @@ h6 {
   position: relative; /* Anchor for image container */
 }
 
-/* ── Dynamic Image Container ─────────────────────────────── */
-.comp-image-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 1 / 1;
-  z-index: 1; /* Below stats */
-  opacity: 1; /* Handle global fade via right-col logic */
-  transition: opacity 0.5s ease;
-  pointer-events: none; /* Let clicks pass through */
-}
 
-/* Hide images completely when stats are active */
-.comp-right-col.show-stats .comp-image-container {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0s 0.5s;
-}
-
-/* ── Dynamic Origami Morphing Canvas ─────────────────────────────── */
-#origami-canvas {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 2;
-  /* subtle floating animation */
-  animation: origamiFloat 8s ease-in-out infinite;
-}
-
-@keyframes origamiFloat {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-8px) rotate(1deg); }
-}
-
-/* 
-  Crucial for the folding effect: 
-  Native CSS tweening of the `d` attribute (SVG path points) and fill colors.
-  Supported natively in all modern webkit/blink browsers.
-*/
-#origami-morph-group path {
-  transition: d 1.2s cubic-bezier(0.25, 1, 0.5, 1), fill 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  stroke-linejoin: round;
-  stroke: rgba(0,0,0,0.03); /* Tiny separation mimicking folded seams */
-  stroke-width: 0.5;
-}
 
 /* ── Stats Wrapper ───────────────────────────────────────── */
 .comp-stats-wrapper {
