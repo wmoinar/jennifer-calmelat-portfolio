@@ -7319,6 +7319,9 @@ h6 {
     justify-content: center;
     text-align: center;
   }
+  .comp-lang-info {
+    align-items: center;
+  }
   .comp-lang-grid {
     justify-content: center;
   }
