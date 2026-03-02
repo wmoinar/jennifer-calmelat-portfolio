@@ -893,3 +893,22 @@ The Certifications section lacks context. The user wants expert-level, clear, an
 - Add these translations to `translations.js`.
 - Update the HTML structure of the certification cards in `index.html` to include these descriptions.
 - Add CSS to hide the descriptions by default and reveal them on hover with a smooth and subtle animation.
+
+---
+
+## T37 · Refine Language Button Position and Scroll Behavior
+
+**Status**: `done`
+**Priority**: Medium
+**Depends on**: nothing
+**Files**: `static/style/master.css`, `static/js/custom.js`
+
+### Problem
+
+The Hero language button needs a slight position adjustment on mobile (more to the right) and better interaction behavior during scroll. On both desktop and mobile, the button should fade out (become highly transparent) while the user is actively scrolling, and return to full visibility when scrolling stops.
+
+### Acceptance Criteria
+
+- Adjust mobile CSS for `#langSwitcherContainer` to move it further to the right.
+- Make the button semitransparent by default, or just ensure the scroll behavior fades it out.
+- Add JavaScript logic to detect active scrolling, apply a "faded" class to the button, and remove it on scroll stop.
