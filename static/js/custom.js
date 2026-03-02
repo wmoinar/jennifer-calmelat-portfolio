@@ -174,6 +174,9 @@
 	 * Section 3 (Competencies) Sticky Scroll Animation
 	 * Items 01-06 reveal one by one as user scrolls
 	/* ---------------------------------------------- */
+  // Flag: when true, rAF animations skip recalculation so nav-reveal styles persist
+  NAY._navRevealed = false;
+
   NAY.CompetenciesScrollAnim = function () {
     var scrollArea = document.querySelector(".comp-scroll-area");
     if (!scrollArea) return;
@@ -194,6 +197,11 @@
     }
 
     function update() {
+      // If navigated via menu, skip recalculation to preserve forced styles
+      if (NAY._navRevealed) {
+        requestAnimationFrame(update);
+        return;
+      }
       if (window.innerWidth <= 991) {
         // On mobile, reset inline styles so CSS takes over
         for (var j = 0; j < N; j++) {
@@ -707,10 +715,102 @@
         }
       }
     }
+
+    // Competencies: sticky scroll-area on desktop — scroll to where the title is
+    if (target.attr("id") === "competencies" && window.innerWidth > 991) {
+      var compTitle = document.querySelector("#competencies .comp-main-title");
+      var navbar = document.getElementById("topNavbar");
+      var navH = navbar ? navbar.offsetHeight : 60;
+      if (compTitle) {
+        top = $(compTitle).offset().top - navH - 20;
+      }
+    }
     return top;
   }
 
   var _navBusy = false;
+
+  /**
+   * Force-reveal all scroll-animated elements in a section so content is
+   * immediately visible when navigating via menu (no manual scroll needed).
+   * Pauses rAF loops via NAY._navRevealed flag.
+   */
+  function forceRevealSection(sectionEl) {
+    if (!sectionEl) return;
+
+    // Pause rAF-based scroll animations
+    NAY._navRevealed = true;
+
+    // Force-show common animated elements inside this section
+    var selectors = [
+      ".comp-skill-row", ".comp-stat-item", ".comp-lang-chip",
+      ".comp-stats-wrapper", ".comp-right-col",
+      ".about-content-wrap", ".about-fade-item", ".about-img-reveal",
+      ".exp-track-fill", ".experience-item",
+      ".expertise-item", ".expertise-card",
+      ".cert-card", ".edu-card",
+      "[class*='-reveal']", ".in-view"
+    ];
+    var els = sectionEl.querySelectorAll(selectors.join(","));
+    for (var i = 0; i < els.length; i++) {
+      els[i].style.opacity = "1";
+      els[i].style.transform = "none";
+      els[i].style.pointerEvents = "auto";
+    }
+
+    // Competencies-specific: reveal right column + counters + title
+    var rightCol = sectionEl.querySelector(".comp-right-col");
+    if (rightCol) {
+      rightCol.classList.add("show-stats");
+      rightCol.style.opacity = "1";
+    }
+    var titleEl = sectionEl.querySelector(".comp-main-title");
+    if (titleEl) {
+      titleEl.style.setProperty("--title-fill", "100%");
+    }
+    // Trigger counters
+    if (sectionEl.id === "competencies" && typeof NAY.runCounters === "function") {
+      NAY.runCounters();
+    }
+
+    // About-specific: set background to white and content visible
+    var sticky = sectionEl.querySelector(".about-sticky");
+    if (sticky) {
+      sticky.style.backgroundColor = "#fff";
+    }
+    var heroH3 = sectionEl.querySelector(".about-hero-title h3");
+    if (heroH3) {
+      heroH3.style.color = "rgb(25,25,30)";
+    }
+    var heroSub = sectionEl.querySelector(".about-hero-title .about-sub");
+    if (heroSub) {
+      heroSub.style.color = "rgba(25,25,30,0.5)";
+    }
+
+    // DELAYED cleanup: attach the scroll listener only AFTER the navigation
+    // transition is fully complete (800ms). This prevents window.scrollTo()
+    // inside navigateTo from triggering the cleanup prematurely.
+    setTimeout(function () {
+      var cleanup = function () {
+        window.removeEventListener("scroll", cleanup);
+        setTimeout(function () {
+          NAY._navRevealed = false;
+          for (var j = 0; j < els.length; j++) {
+            els[j].style.opacity = "";
+            els[j].style.transform = "";
+            els[j].style.pointerEvents = "";
+          }
+          if (rightCol) { rightCol.style.opacity = ""; }
+          if (titleEl) { titleEl.style.removeProperty("--title-fill"); }
+          if (sticky) { sticky.style.backgroundColor = ""; }
+          if (heroH3) { heroH3.style.color = ""; }
+          if (heroSub) { heroSub.style.color = ""; }
+        }, 100);
+      };
+      window.addEventListener("scroll", cleanup, { passive: true, once: true });
+    }, 800);
+  }
+
   NAY.navigateTo = function (target) {
     if (_navBusy) return;
     if (!target || !target.length) return;
@@ -718,13 +818,15 @@
 
     var overlay = document.getElementById("pageTransition");
     var targetTop = scrollTopFor(target);
+    var sectionEl = target[0]; // raw DOM element
 
     // Phase 1: fade to white (350ms)
     overlay.classList.add("active");
 
     setTimeout(function () {
-      // Phase 2: instant jump
+      // Phase 2: instant jump + force reveal (while screen is white)
       window.scrollTo(0, targetTop);
+      forceRevealSection(sectionEl);
 
       // Phase 3: wait for paint, then fade back in
       setTimeout(function () {
@@ -1014,6 +1116,8 @@
     window.addEventListener("resize", cacheLayoutValues, { passive: true });
 
     function updateAnim(dt) {
+      // If navigated via menu, skip recalculation to preserve forced styles
+      if (NAY._navRevealed) return;
       // On mobile/tablet, CSS handles the static display — no JS animation needed
       if (!isDesktop) return;
 
