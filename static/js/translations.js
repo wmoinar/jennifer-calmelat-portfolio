@@ -69,8 +69,6 @@ window.translations = {
         "expert_pm_desc": "Transversal project management using Prince 2 methodology, change management approaches, risk matrices, and stakeholder coordination.",
         "expert_training_title": "Training & Capacity Building",
         "expert_training_desc": "Delivered training on investigative techniques, facilitated PSEAH information sessions, and designed programs for inclusive and safe workplaces.",
-        "expert_mediation_title": "Intercultural Mediation",
-        "expert_mediation_desc": "Multicultural conflict resolution, coordination with diverse communities, and representation across government, police, and humanitarian actors.",
 
         "exp_title": "Work Experience",
         "exp_subtitle": "13+ Years of Professional Journey",
@@ -255,8 +253,6 @@ window.translations = {
         "expert_pm_desc": "Gestion de projet transversale utilisant la méthodologie Prince 2, approches de conduite du changement, matrices de risques et coordination des parties prenantes.",
         "expert_training_title": "Formation & Renforcement",
         "expert_training_desc": "Dispensation de formations sur les techniques d'enquête, animation de sessions d'information PSEAH et conception de programmes pour des lieux de travail inclusifs.",
-        "expert_mediation_title": "Médiation Interculturelle",
-        "expert_mediation_desc": "Résolution de conflits multiculturels, coordination avec diverses communautés et représentation auprès des acteurs gouvernementaux, policiers et humanitaires.",
 
         "exp_title": "Expérience Professionnelle",
         "exp_subtitle": "13+ Ans de Parcours Professionnel",
@@ -441,8 +437,6 @@ window.translations = {
         "expert_pm_desc": "Gestión de proyectos transversales utilizando la metodología Prince 2, enfoques de gestión del cambio, matrices de riesgos y coordinación de partes interesadas.",
         "expert_training_title": "Formación y Capacitación",
         "expert_training_desc": "Impartición de formación sobre técnicas de investigación, facilitación de sesiones informativas sobre PSEAH y diseño de programas para lugares de trabajo inclusivos.",
-        "expert_mediation_title": "Mediación Intercultural",
-        "expert_mediation_desc": "Resolución de conflictos multiculturales, coordinación con diversas comunidades y representación ante actores gubernamentales, policiales y humanitarios.",
 
         "exp_title": "Experiencia Profesional",
         "exp_subtitle": "13+ Años de Trayectoria",

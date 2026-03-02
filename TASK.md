@@ -820,3 +820,21 @@ Grammatically, "Investigation Consultant" is preferred over the pluralized "Inve
 - Update "Investigations Consultant" to "Investigation Consultant" in the exact places shown in the user's screenshot (About Me subtitle, About Me bio introduction).
 - Ensure the translation files are updated accordingly, including FR ("Consultante en Investigations" -> "Consultante en Investigation" or equivalent grammar fix if needed) and ES ("Consultora en Investigaciones" -> "Consultora en Investigación").
 - Apply to title tags, header sections, and anywhere else "Investigations Consultant" appears.
+
+---
+
+## T33 · Remove "Intercultural Mediation" from Areas of Expertise
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `index.html`, `static/js/translations.js`
+
+### Problem
+
+The user requested the removal of the 6th point in the "Areas of Expertise" section, which is currently titled "Intercultural Mediation".
+
+### Acceptance Criteria
+
+- Remove the HTML element corresponding to the 6th item ("Intercultural Mediation") in the "Areas of Expertise" section of `index.html`.
+- Remove the translation keys associated with this item from `translations.js` for all languages.
