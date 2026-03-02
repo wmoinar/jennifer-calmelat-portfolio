@@ -2660,6 +2660,59 @@ h6 {
   padding-top: 100px;
 }
 
+/* ==============================================
+   CERTIFICATIONS HOVER ANIMATION (T36)
+   ============================================== */
+
+/* Ensure the card is relative so the absolute div fits inside */
+.cert-card {
+  position: relative;
+  overflow: hidden; /* Hide the description when it slides down */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style for the description container */
+.cert-card-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 10;
+  pointer-events: none; /* Let standard clicks pass through if needed, though mostly informational */
+}
+
+/* Text inside the description */
+.cert-card-desc p {
+  color: #173b6c;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Hover State: Reveal description */
+.cert-card:hover .cert-card-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle lift effect on the whole card */
+.cert-card:hover {
+  box-shadow: 0 10px 40px rgba(80, 153, 223, 0.15);
+  transform: translateY(-5px);
+}
+
 .p-100px-l {
   padding-left: 100px;
 }

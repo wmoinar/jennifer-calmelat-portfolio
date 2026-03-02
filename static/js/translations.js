@@ -142,26 +142,32 @@ window.translations = {
         "cert_1_name": "Investigator Qualification Training Scheme",
         "cert_1_org": "CHS Alliance",
         "cert_1_date": "Tier 1, 2 & 3 – 2022, 2023 & 2024",
+        "cert_1_desc": "Equips investigators with specialized methodologies and procedural standards to conduct survivor-centered and objective investigations within the humanitarian sector.",
 
         "cert_2_name": "Certified Fraud Examiner (CFE)",
         "cert_2_org": "ACFE",
         "cert_2_date": "Ongoing – 2025",
+        "cert_2_desc": "A globally recognized credential demonstrating expertise in fraud prevention, detection, and deterrence, essential for assuring financial integrity in complex organizations.",
 
         "cert_3_name": "Investigations Foundations",
         "cert_3_org": "Ethics Vision International",
         "cert_3_date": "London – May 2025",
+        "cert_3_desc": "Provides a strong structural framework for fact-finding missions, focusing on ethical evidence gathering, interviewing techniques, and comprehensive case analysis.",
 
         "cert_4_name": "BSAFE Security Training",
         "cert_4_org": "UNDSS",
         "cert_4_date": "July 2024",
+        "cert_4_desc": "Mandatory security training ensuring personnel possess the critical knowledge needed to maintain personal safety and security in high-risk environments.",
 
         "cert_5_name": "PSEA, Global Safeguarding & Child Protection",
         "cert_5_org": "UNICEF",
         "cert_5_date": "July & November 2024",
+        "cert_5_desc": "Establishes a zero-tolerance framework for preventing sexual exploitation and abuse, ensuring strict compliance with safeguarding protocols for vulnerable populations.",
 
         "cert_6_name": "Fraud & Corruption Awareness and Prevention",
         "cert_6_org": "UNFPA",
         "cert_6_date": "July 2024",
+        "cert_6_desc": "Builds core competencies to identify red flags of corruption, manage risks effectively, and foster an organizational culture of absolute transparency and accountability.",
 
         "contact_title": "Get in Touch",
         "contact_subtitle": "I'd love to hear from you",
@@ -326,26 +332,32 @@ window.translations = {
         "cert_1_name": "Programme de Qualification d'Enquêteur",
         "cert_1_org": "CHS Alliance",
         "cert_1_date": "Niveaux 1, 2 & 3 – 2022, 2023 & 2024",
+        "cert_1_desc": "Prépare les enquêteurs avec des méthodologies spécialisées et des normes procédurales pour mener des enquêtes objectives et centrées sur les survivants dans le secteur humanitaire.",
 
         "cert_2_name": "Examinateur de Fraude Certifié (CFE)",
         "cert_2_org": "ACFE",
         "cert_2_date": "En cours – 2025",
+        "cert_2_desc": "Une accréditation mondialement reconnue démontrant une expertise dans la prévention, la détection et la dissuasion de la fraude, essentielle pour assurer l’intégrité financière.",
 
         "cert_3_name": "Fondamentaux des Enquêtes",
         "cert_3_org": "Ethics Vision International",
         "cert_3_date": "Londres – Mai 2025",
+        "cert_3_desc": "Fournit un cadre structurel solide pour les missions d'établissement des faits, en mettant l'accent sur la collecte éthique de preuves, les techniques d'entrevue et l'analyse de cas.",
 
         "cert_4_name": "Formation Sécurité BSAFE",
         "cert_4_org": "UNDSS",
         "cert_4_date": "Juillet 2024",
+        "cert_4_desc": "Formation obligatoire en sécurité garantissant que le personnel possède les connaissances essentielles pour maintenir la sûreté personnelle dans des environnements à haut risque.",
 
         "cert_5_name": "PSEAH, Sauvegarde Globale & Protection de l'Enfance",
         "cert_5_org": "UNICEF",
         "cert_5_date": "Juillet & Novembre 2024",
+        "cert_5_desc": "Établit un cadre de tolérance zéro pour prévenir l'exploitation et les abus sexuels, assurant le strict respect des protocoles de sauvegarde pour les populations vulnérables.",
 
         "cert_6_name": "Sensibilisation et Prévention de la Fraude et de la Corruption",
         "cert_6_org": "UNFPA",
         "cert_6_date": "Juillet 2024",
+        "cert_6_desc": "Développe des compétences de base pour identifier les signaux d'alarme de corruption, gérer les risques efficacement et favoriser une culture organisationnelle de transparence absolue.",
 
         "contact_title": "Contactez-moi",
         "contact_subtitle": "Discutons de vos besoins",
@@ -510,26 +522,32 @@ window.translations = {
         "cert_1_name": "Esquema de Cualificación de Investigador",
         "cert_1_org": "CHS Alliance",
         "cert_1_date": "Nivel 1, 2 y 3 – 2022, 2023 y 2024",
+        "cert_1_desc": "Proporciona a los investigadores metodologías especializadas y estándares procedimentales para llevar a cabo investigaciones objetivas y centradas en los supervivientes dentro del sector humanitario.",
 
         "cert_2_name": "Examinador de Fraude Certificado (CFE)",
         "cert_2_org": "ACFE",
         "cert_2_date": "En curso – 2025",
+        "cert_2_desc": "Una acreditación reconocida a nivel mundial que demuestra dominio en la prevención, detección y disuasión del fraude, esencial para garantizar la integridad financiera.",
 
         "cert_3_name": "Fundamentos de Investigaciones",
         "cert_3_org": "Ethics Vision International",
         "cert_3_date": "Londres – Mayo 2025",
+        "cert_3_desc": "Proporciona un marco estructural sólido para las misiones de determinación de hechos, enfocándose en la recopilación ética de pruebas, técnicas de entrevista y análisis exhaustivo de casos.",
 
         "cert_4_name": "Formación en Seguridad BSAFE",
         "cert_4_org": "UNDSS",
         "cert_4_date": "Julio 2024",
+        "cert_4_desc": "Formación obligatoria en seguridad que garantiza que el personal posea los conocimientos esenciales para mantener la seguridad personal en entornos de alto riesgo.",
 
         "cert_5_name": "PSEA, Salvaguardia Global y Protección Infantil",
         "cert_5_org": "UNICEF",
         "cert_5_date": "Julio y Noviembre 2024",
+        "cert_5_desc": "Establece un marco de tolerancia cero para prevenir la explotación y el abuso sexual, garantizando el estricto cumplimiento de los protocolos de salvaguardia.",
 
         "cert_6_name": "Conciencia y Prevención de Fraude y Corrupción",
         "cert_6_org": "UNFPA",
         "cert_6_date": "Julio 2024",
+        "cert_6_desc": "Desarrolla competencias básicas para identificar señales de alerta de corrupción, gestionar riesgos eficazmente y fomentar una cultura organizacional de transparencia absoluta.",
 
         "contact_title": "Contáctame",
         "contact_subtitle": "Hablemos de tus necesidades",
