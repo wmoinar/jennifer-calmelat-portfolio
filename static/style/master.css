@@ -777,10 +777,10 @@ h6 {
 @media (max-width: 991px) {
   .lang-switcher {
     top: 10px;
-    right: 10px; /* Push closer to the edge */
+    right: 5px; /* Pushed extremely close to the right edge */
     transform: none;
-    padding: 6px 14px;
-    font-size: 12px;
+    padding: 5px 10px; /* Slimmer padding for tighter fit */
+    font-size: 11px;
     z-index: 10000;
   }
 }
