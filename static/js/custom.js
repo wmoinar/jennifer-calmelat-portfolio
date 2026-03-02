@@ -696,8 +696,8 @@
         // Mobile: section has margin-top:-130px and .about-unified-container
         // has padding-top:220px.  We need to offset so the "ABOUT ME" title
         // sits comfortably just below the top of the viewport.
-        // Add 130 (negative margin) + a small extra breathing room.
-        top += 100;
+        // Add enough to clear the hero overlap + breathing room.
+        top += 160;
       }
     }
     return top;
