@@ -838,3 +838,20 @@ The user requested the removal of the 6th point in the "Areas of Expertise" sect
 
 - Remove the HTML element corresponding to the 6th item ("Intercultural Mediation") in the "Areas of Expertise" section of `index.html`.
 - Remove the translation keys associated with this item from `translations.js` for all languages.
+
+---
+
+## T34 · Update Areas of Expertise Total Count
+
+**Status**: `done`
+**Priority**: Low
+**Depends on**: nothing
+**Files**: `index.html`
+
+### Problem
+
+After removing the 6th point ("Intercultural Mediation") in the "Areas of Expertise" section, the pagination counter still shows "/ 06". This needs to be updated to "/ 05".
+
+### Acceptance Criteria
+
+- Update the hardcoded total count string from "06" to "05" in the "Areas of Expertise" DOM slider controller (probably located in `index.html` or `custom.js`).

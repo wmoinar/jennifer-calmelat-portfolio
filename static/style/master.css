@@ -7341,7 +7341,7 @@ h6 {
 /* ── Scroll area: creates scrollable height ─ */
 .expertise-scroll-area {
   position: relative;
-  height: 420vh;
+  height: 350vh;
 }
 
 /* ── Sticky container: full-viewport pinned ─ */
