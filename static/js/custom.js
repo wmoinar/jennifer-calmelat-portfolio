@@ -1630,5 +1630,29 @@
     NAY.CompetenciesReveal();
   });
 
+  /* ---------------------------------------------- /*
+   * T37: Language Switcher Scroll Fade
+  /* ---------------------------------------------- */
+  (function() {
+    var langSwitcher = document.getElementById("langSwitcherContainer");
+    if (!langSwitcher) return;
+
+    var isScrolling;
+    window.addEventListener("scroll", function() {
+      // Clear the timeout throughout the scroll
+      window.clearTimeout(isScrolling);
+      
+      // Assure the class is added as soon as scrolling starts
+      if (!langSwitcher.classList.contains("is-scrolling")) {
+        langSwitcher.classList.add("is-scrolling");
+      }
+
+      // Set a timeout to run after scrolling ends
+      isScrolling = setTimeout(function() {
+        langSwitcher.classList.remove("is-scrolling");
+      }, 200);
+    }, { passive: true });
+  })();
+
   window.NAY = NAY;
 })(jQuery);
