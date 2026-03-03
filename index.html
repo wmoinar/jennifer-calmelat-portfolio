@@ -367,23 +367,24 @@
         .edu-card { padding: 28px 20px; }
         .edu-track-bg, .edu-track-fill { display: none; }
         .edu-entries {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(2, minmax(0, 1fr));
           grid-template-rows: unset;
           gap: 32px 20px;
         }
         .edu-entry {
           grid-row: auto !important;
+          grid-column: auto !important;
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 0;
         }
         .edu-timeline.edu-visible .edu-entry { transition-delay: 0s !important; }
-        .edu-year  { align-self: auto; margin-bottom: 10px; }
-        .edu-node  { align-self: auto; margin-bottom: 16px; }
-        .edu-degree { padding: 0 12px; margin-bottom: 6px; }
-        .edu-field  { padding: 0 12px; margin-bottom: 4px; }
-        .edu-place  { padding: 0 12px; }
+        .edu-year  { align-self: center; margin-bottom: 10px; }
+        .edu-node  { display: none; }
+        .edu-degree { align-self: center; padding: 0 12px; margin-bottom: 6px; }
+        .edu-field  { align-self: center; padding: 0 12px; margin-bottom: 4px; }
+        .edu-place  { align-self: center; padding: 0 12px; }
       }
       @media (max-width: 480px) {
         .edu-entries { grid-template-columns: 1fr; gap: 28px 0; }
@@ -1491,7 +1492,6 @@
         <a class="drawer-logo" href="#home">J.C.</a>
         <div class="drawer-header-right">
           <button class="drawer-close" id="drawerClose">✕</button>
-          <p class="drawer-location">HEIMSBRUNN, FRANCE</p>
         </div>
       </div>
       <nav class="drawer-nav">
@@ -1636,7 +1636,7 @@
                         and high-risk operational contexts.
                       </p>
                       <div class="row about-list about-fade-item">
-                        <div class="col-md-6">
+                        <div class="col-xl-6 col-12">
                           <div class="media">
                             <label data-i18n="about_label_email">E-mail</label>
                             <p><a href="mailto:j.calmelat@gmail.com">j.calmelat@gmail.com</a></p>
@@ -1650,7 +1650,7 @@
                             <p data-i18n="about_val_location">France</p>
                           </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xl-6 col-12">
                           <div class="media">
                             <label data-i18n="about_label_exp">Experience</label>
                             <p data-i18n="about_val_exp">13+ Years</p>
