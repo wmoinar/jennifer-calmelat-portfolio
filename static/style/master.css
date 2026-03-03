@@ -9041,6 +9041,10 @@ h6 {
 @media (max-width: 991px) {
   .experience-timeline {
     padding-left: 64px;
+    padding-right: 25px;
+  }
+  .section-title {
+    padding-right: 15px;
   }
   .exp-badge {
     left: -64px;
@@ -9060,6 +9064,10 @@ h6 {
 @media (max-width: 767px) {
   .experience-timeline {
     padding-left: 52px;
+    padding-right: 15px;
+  }
+  .section-title {
+    padding-right: 10px;
   }
   .exp-badge {
     left: -52px;
