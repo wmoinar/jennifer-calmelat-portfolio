@@ -8476,15 +8476,7 @@ h6 {
   align-items: flex-end;
   gap: 5px;
 }
-.drawer-location {
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 10px;
-  color: #aaa;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 1.4;
-}
+
 .drawer-close {
   font-family: "Inter", "Poppins", sans-serif;
   font-size: 20px;
