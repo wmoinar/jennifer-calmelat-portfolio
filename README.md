@@ -25,7 +25,8 @@ Single-page, service-oriented site with an editorial "international advisory" de
 │   └── web/                    # Optimized web versions (~250 KB each)
 └── static/
     ├── js/
-    │   └── site.js             # i18n (EN/FR/ES) + interactions + form handler
+    │   ├── site.js             # i18n (EN/FR/ES) + interactions + form handler
+    │   └── globe.js            # Animated globe (global footprint section)
     └── style/
         └── site.css            # Design system & all styles
 ```
@@ -39,6 +40,7 @@ Single-page, service-oriented site with an editorial "international advisory" de
 5. Track record – Expandable career timeline (8 roles)
 6. Credentials – Education and certifications
 7. Contact – Direct channels + Formspree form
+8. Global footprint – Animated dot-matrix globe (canvas, custom orthographic projection) marking 21 countries worked in, with a synced country list
 
 ## Languages
 
