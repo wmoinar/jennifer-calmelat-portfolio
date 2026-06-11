@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <link href="static/style/site.css?v=1" rel="stylesheet" />
+    <link href="static/style/site.css?v=2" rel="stylesheet" />
   </head>
 
   <body>
@@ -751,6 +751,45 @@
           </div>
         </div>
       </section>
+      <!-- ================= Global footprint ================= -->
+      <section class="footprint" id="footprint">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow rv" data-i18n="fp_eyebrow">Global footprint</p>
+            <h2 class="rv" style="--d: 0.08s" data-i18n="[html]fp_title">
+              Wherever you operate, <em>I can be there.</em>
+            </h2>
+            <p class="lede rv" style="--d: 0.14s" data-i18n="fp_lede">
+              21 countries across four continents — on-site deployments and
+              remote investigations, in three languages.
+            </p>
+          </div>
+
+          <div class="footprint-grid">
+            <div class="footprint-side rv">
+              <div class="fp-legend">
+                <span class="fp-leg-item">
+                  <span class="fp-dot fp-dot-field" aria-hidden="true"></span>
+                  <span data-i18n="fp_leg_field">On-site missions</span>
+                </span>
+                <span class="fp-leg-item">
+                  <span class="fp-dot fp-dot-remote" aria-hidden="true"></span>
+                  <span data-i18n="fp_leg_remote">Remote investigations</span>
+                </span>
+              </div>
+              <ul class="fp-list" id="fpList"></ul>
+            </div>
+
+            <div class="footprint-globe rv" style="--d: 0.1s" id="globeWrap">
+              <canvas
+                id="globeCanvas"
+                role="img"
+                aria-label="Rotating globe highlighting the countries where Jennifer Calmelat has worked"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- ================= Footer ================= -->
@@ -769,6 +808,13 @@
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 14V2M3 7l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
 
-    <script src="static/js/site.js?v=1"></script>
+    <script src="static/js/site.js?v=3"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"
+      integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="static/js/globe.js?v=3" defer></script>
   </body>
 </html>

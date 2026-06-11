@@ -208,6 +208,13 @@
         "Something went wrong. Please email me directly at j.calmelat@gmail.com.",
       ct_subject_prefix: "Enquiry: ",
 
+      fp_eyebrow: "Global footprint",
+      fp_title: "Wherever you operate, <em>I can be there.</em>",
+      fp_lede:
+        "21 countries across four continents — on-site deployments and remote investigations, in three languages.",
+      fp_leg_field: "On-site missions",
+      fp_leg_remote: "Remote investigations",
+
       footer_rights: "© {year} Jennifer Calmelat. All rights reserved.",
     },
 
@@ -411,6 +418,13 @@
       ct_msg_err:
         "Une erreur est survenue. Écrivez-moi directement à j.calmelat@gmail.com.",
       ct_subject_prefix: "Demande : ",
+
+      fp_eyebrow: "Empreinte mondiale",
+      fp_title: "Où que vous opériez, <em>je peux intervenir.</em>",
+      fp_lede:
+        "21 pays sur quatre continents — déploiements sur le terrain et enquêtes à distance, en trois langues.",
+      fp_leg_field: "Missions sur le terrain",
+      fp_leg_remote: "Enquêtes à distance",
 
       footer_rights: "© {year} Jennifer Calmelat. Tous droits réservés.",
     },
@@ -616,6 +630,13 @@
         "Algo salió mal. Escríbeme directamente a j.calmelat@gmail.com.",
       ct_subject_prefix: "Consulta: ",
 
+      fp_eyebrow: "Presencia mundial",
+      fp_title: "Donde sea que operes, <em>puedo estar.</em>",
+      fp_lede:
+        "21 países en cuatro continentes — despliegues en terreno e investigaciones en remoto, en tres idiomas.",
+      fp_leg_field: "Misiones en terreno",
+      fp_leg_remote: "Investigaciones en remoto",
+
       footer_rights: "© {year} Jennifer Calmelat. Todos los derechos reservados.",
     },
   };
@@ -669,6 +690,8 @@
     document.querySelectorAll("[data-setlang]").forEach(function (btn) {
       btn.classList.toggle("active", btn.getAttribute("data-setlang") === lang);
     });
+
+    document.dispatchEvent(new CustomEvent("jc:lang", { detail: lang }));
   }
 
   document.querySelectorAll("[data-setlang]").forEach(function (btn) {
