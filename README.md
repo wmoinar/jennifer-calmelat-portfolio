@@ -1,18 +1,17 @@
-# Jennifer Calmelat – Portfolio Website
+# Jennifer Calmelat – Consulting Website
 
-Personal portfolio website for **Jennifer Calmelat**, Investigations Consultant with 12+ years of international experience in humanitarian, compliance, and corporate sectors.
+Professional services website for **Jennifer Calmelat**, independent Investigation & Safeguarding Consultant (PSEAH & fraud investigations, compliance, training) with 13+ years of international experience.
 
 Live at: [jennifercalmelat.com](https://jennifercalmelat.com)
 
 ## About
 
-Single-page portfolio built on the Tony Portfolio Template, customized for Jennifer's professional profile. Features a multilingual interface (EN / FR / ES), animated scroll sections, and a downloadable CV.
+Single-page, service-oriented site with an editorial "international advisory" design. Fully static, dependency-free (no jQuery/Bootstrap), multilingual (EN / FR / ES), with a confidential-consultation contact form.
 
 ## Tech Stack
 
-- HTML5 / CSS3 / JavaScript (jQuery 3.2.1, Bootstrap 4)
-- Owl Carousel, Magnific Popup, TypeIt
-- Font Awesome 5, ET-Line, Themify Icons
+- HTML5 / CSS3 / vanilla JavaScript — no frameworks, no build step
+- Typography: Fraunces + Archivo (Google Fonts)
 - Contact form via [Formspree](https://formspree.io)
 - Hosted on **GitHub Pages** with custom domain via Cloudflare
 
@@ -22,34 +21,28 @@ Single-page portfolio built on the Tony Portfolio Template, customized for Jenni
 ├── index.html                  # Main page (single-page layout)
 ├── favicon.ico
 ├── CV-JenniferCalmelat.pdf     # Downloadable CV
-├── img_jennifer/               # Profile photos
+├── img_jennifer/               # Original photos
+│   └── web/                    # Optimized web versions (~250 KB each)
 └── static/
     ├── js/
-    │   ├── custom.js           # Animations & scroll logic
-    │   ├── translations.js     # EN / FR / ES translations
-    │   └── mail_send.js        # Contact form handler
-    ├── plugin/                 # Bootstrap, FontAwesome, etc.
+    │   └── site.js             # i18n (EN/FR/ES) + interactions + form handler
     └── style/
-        └── master.css          # Main stylesheet
+        └── site.css            # Design system & all styles
 ```
 
 ## Sections
 
-1. Home – Hero banner with animated typewriter
-2. About – Scroll animation with bio and CV download
-3. Key Competencies – Progress bars and stat counters
-4. Areas of Expertise – Six feature boxes
-5. Work Experience – Timeline with 8 entries
-6. Education – Academic background cards
-7. Certifications – Professional certifications
-8. Contact – Formspree form and contact details
+1. Hero – Value proposition with consultation CTA and trust strip (UNICEF, UNFPA, MSF, ICRC…)
+2. Services – Six numbered service offerings with deliverable tags (click pre-fills the contact form)
+3. How we work – Four-step engagement process with confidentiality note
+4. Why me – Bio, animated stats, languages, CV download
+5. Track record – Expandable career timeline (8 roles)
+6. Credentials – Education and certifications
+7. Contact – Direct channels + Formspree form
 
 ## Languages
 
-The site supports three languages switchable via the globe menu:
-- English (EN)
-- French (FR)
-- Spanish (ES)
+EN / FR / ES, switchable from the header. The choice persists in `localStorage`; first visit auto-detects the browser language. All copy lives in the `I18N` dictionary in `static/js/site.js`.
 
 ## Deployment
 
