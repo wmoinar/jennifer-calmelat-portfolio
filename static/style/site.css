@@ -1038,6 +1038,21 @@ body.menu-locked .nav-burger span:nth-child(3) { transform: translateY(-6.6px) r
 .footer-inner a { transition: color 0.25s ease; }
 .footer-inner a:hover { color: var(--paper-on-ink); }
 .footer-links { display: flex; gap: 22px; }
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: right;
+}
+.footer-meta .footer-tagline {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--acc);
+}
+@media (max-width: 767px) {
+  .footer-meta { text-align: left; }
+}
 
 /* Floating "back to top" */
 .to-top {
