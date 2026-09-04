@@ -12,18 +12,18 @@
       title_tag: "Jennifer Calmelat — Investigation & Safeguarding Consultant",
 
       nav_services: "Services",
-      nav_approach: "How we work",
+      nav_approach: "Approach",
       nav_about: "Why me",
       nav_experience: "Track record",
       nav_credentials: "Credentials",
       nav_contact: "Contact",
-      nav_cta: "Book a consultation",
+      nav_cta: "Book a strategic consultation",
 
-      hero_eyebrow: "Investigations · Safeguarding · Compliance",
-      hero_title: "Protecting people.<br>Strengthening <em>integrity.</em>",
+      hero_eyebrow: "Investigations · Safeguarding · International Compliance",
+      hero_title: "Shedding light on the facts.<br>Strengthening <em>integrity.</em>",
       hero_lead:
-        "I help international organizations <strong>investigate misconduct, prevent fraud and build safer workplaces</strong>. Independent, trauma-informed and trilingual — with 13+ years of field experience across 15+ countries.",
-      hero_cta1: "Discuss your case",
+        "Combining 13+ years of global field experience with 6+ years of dedicated practice in sensitive and complex investigations (misconduct, fraud, PSEAH). I deliver the <strong>objective fact-finding and trauma-informed evidence</strong> that Boards and donors require for full operational certainty.",
+      hero_cta1: "Secure your organization's integrity",
       hero_cta2: "How I can help",
       hero_badge_title: "CHS Alliance qualified investigator",
       hero_badge_sub: "Tier 1 · 2 · 3 — Certified",
@@ -52,18 +52,18 @@
       svc_3_tag1: "Policy drafting",
       svc_3_tag2: "Advisory memos",
       svc_3_tag3: "Whistleblowing mechanisms",
-      svc_4_title: "Training & capacity building",
+      svc_4_title: "Investigator mentoring & capacity building",
       svc_4_desc:
-        "Practical training on investigative techniques and PSEAH for focal points, managers and field teams — designed and delivered in English, French or Spanish.",
-      svc_4_tag1: "Investigative techniques",
-      svc_4_tag2: "PSEAH sessions",
-      svc_4_tag3: "Local capacity",
-      svc_5_title: "Policy & training material review",
+        "Knowledge-transfer programmes that upskill in-house teams in forensic interview techniques and SEAH case management — so they handle future crises with autonomy and less external dependency.",
+      svc_4_tag1: "Forensic interviews",
+      svc_4_tag2: "Case management",
+      svc_4_tag3: "In-house teams",
+      svc_5_title: "Internal policy & governance review",
       svc_5_desc:
-        "Independent quality assurance of your safeguarding policies, codes of conduct and learning resources — so they work in practice, not just on paper.",
-      svc_5_tag1: "Gap analysis",
-      svc_5_tag2: "Quality assurance",
-      svc_5_tag3: "Recommendations",
+        "A strategic audit of governance frameworks, codes of conduct and whistleblowing systems — so they withstand the scrutiny of the most rigorous donors and auditors.",
+      svc_5_tag1: "Governance audit",
+      svc_5_tag2: "Whistleblowing systems",
+      svc_5_tag3: "Donor-ready",
       svc_6_title: "Project management for complex programmes",
       svc_6_desc:
         "End-to-end management of humanitarian and health projects: Prince 2 methodology, change management, risk matrices and stakeholder coordination.",
@@ -73,30 +73,30 @@
       svc_note:
         "Every engagement is handled with strict confidentiality. Click a service to start the conversation.",
 
-      apr_eyebrow: "How we work",
-      apr_title: "A clear process, <em>from first call to final report</em>",
-      apr_1_title: "Confidential consultation",
+      apr_eyebrow: "Our approach",
+      apr_title: "Fact-finding that is <em>rigorous and human</em>",
+      apr_1_title: "Independence",
       apr_1_desc:
-        "Tell me about your situation — free of charge and in full confidence. I reply within 48 hours.",
-      apr_2_title: "Scoping & proposal",
+        "An objective, external lens that eliminates conflicts of interest and gives Boards unbiased, actionable findings.",
+      apr_2_title: "Evidence-based rigour",
       apr_2_desc:
-        "A clear scope, methodology, timeline and transparent fee — agreed together before any work begins.",
-      apr_3_title: "Delivery",
+        "Analytical precision and field-tested investigative techniques, structured with Prince 2 case management.",
+      apr_3_title: "Trauma-informed practice",
       apr_3_desc:
-        "Remote or deployed to the field: evidence-based, trauma-informed work with regular check-ins at the pace your case requires.",
-      apr_4_title: "Findings & follow-up",
+        "A secure environment that gathers high-quality testimony without re-victimisation — the human presence truthful disclosure requires.",
+      apr_4_title: "Compliance & methodology",
       apr_4_desc:
-        "Actionable findings and recommendations — plus support to implement them and strengthen your organization for the future.",
+        "Bridging the gap between ethical allegations and legal, forensic facts — aligned with CHS Alliance standards.",
       apr_note:
-        "<strong>Confidentiality, first and always.</strong> Survivor-centred and trauma-informed methodologies, secure handling of evidence and data, and independence at every step of the process.",
+        "<strong>Confidentiality, first and always.</strong> A secure, confidential and legally sound process that protects both the people involved and the integrity of the mission.",
 
       about_caption: "Based in France · Working worldwide",
       about_eyebrow: "Why work with me",
       about_title: "Field-tested rigour, <em>human-centred</em> practice",
       about_p1:
-        "I've spent 13+ years inside the organizations I now serve — <strong>ICRC, MSF, UNFPA, UNICEF</strong>, university hospitals and business schools — across HR, finance, investigations, safeguarding and programme management. I know how misconduct cases feel from the inside, and what it takes to resolve them properly.",
+        "I bring 13+ years of experience gained within leading international organizations — <strong>ICRC, MSF, UNFPA and UNICEF</strong> — with more than 6 years dedicated to independent investigations into misconduct, fraud and PSEAH.",
       about_p2:
-        "That means investigations that respect both the people involved and the realities of field operations — delivered with the independence, discretion and analytical rigour your board and donors expect.",
+        "A qualified investigator (CHS Alliance Tier 1, 2 & 3), Master of Law in Human Rights & Bioethics and Certified Fraud Examiner (ongoing), I combine the rigour of Prince 2 project management with a trauma-informed approach to fact-finding — across 21 countries and four continents.",
       stat_years: "Years of experience",
       stat_countries: "Countries",
       stat_orgs: "Organizations",
@@ -109,7 +109,7 @@
       xp_eyebrow: "Track record",
       xp_title: "Where this experience <em>was earned</em>",
       xp_lede:
-        "A career built across UN agencies, NGOs, hospitals and the private sector — in headquarters and in the field.",
+        "A career built across the private sector, UN agencies, NGOs, local associations and hospitals — in headquarters and in the field.",
       xp_1_date: "Oct 2023 — Present",
       xp_1_role: "Investigation Consultant & Trainer",
       xp_1_org: "OSACO · UNICEF · MSF · Business schools & universities",
@@ -129,7 +129,7 @@
       xp_4_role: "Behavioural Committee Member (GAREC)",
       xp_4_org: "Médecins Sans Frontières — Remote",
       xp_4_detail:
-        "<ul><li>Implementation of the Behavioural Committee and drafting of ethical policies.</li><li>Dissemination of the whistleblowing mechanism; investigations of reported complaints.</li><li>Design of training to promote an inclusive and safe workplace.</li></ul>",
+        "<ul><li>Member of the GAREC Behavioural Committee: contributed to drafting ethical policies.</li><li>Investigations into reported complaints and dissemination of the whistleblowing mechanism.</li><li>Contributed to designing training for an inclusive and safe workplace.</li></ul>",
       xp_5_date: "Jan 2021 — Jul 2022",
       xp_5_role: "Deputy Coordinator — Intercultural Mediation",
       xp_5_org: "BELRefugees — Brussels",
@@ -152,7 +152,7 @@
         "<ul><li>Cash management in SAP; lean management and continuous improvement projects.</li><li>Negotiation with CFOs and CEOs on R&D fiscal incentives — €850K revenue, 36 new clients.</li></ul>",
 
       cred_eyebrow: "Credentials",
-      cred_title: "Qualified, certified, <em>and still learning</em>",
+      cred_title: "Qualified, certified, <em>and always evolving</em>",
       edu_heading: "Education",
       cert_heading: "Certifications & training",
       edu_1_degree: "Master of Specialization in Law",
@@ -183,7 +183,7 @@
       ct_eyebrow: "Contact",
       ct_title: "Let's discuss <em>how I can help.</em>",
       ct_lede:
-        "Whether you're facing a sensitive case right now or strengthening your safeguards for the future — the first conversation is free and confidential.",
+        "Whether it's allegations of a breach of your internal code of conduct, training your in-house investigators or a review of your processes — the first conversation is free and confidential.",
       ct_email: "Email",
       ct_phone: "Phone / WhatsApp",
       ct_location: "Location",
@@ -215,6 +215,7 @@
       fp_leg_field: "On-site missions",
       fp_leg_remote: "Remote investigations",
 
+      footer_tagline: "Investigations · Safeguarding · International Compliance",
       footer_rights: "© {year} Jennifer Calmelat. All rights reserved.",
     },
 
@@ -222,31 +223,31 @@
       title_tag: "Jennifer Calmelat — Consultante en enquêtes & safeguarding",
 
       nav_services: "Services",
-      nav_approach: "Méthode",
-      nav_about: "Pourquoi moi",
+      nav_approach: "Approche",
+      nav_about: "À propos",
       nav_experience: "Parcours",
       nav_credentials: "Références",
       nav_contact: "Contact",
-      nav_cta: "Prendre rendez-vous",
+      nav_cta: "Réserver une consultation stratégique",
 
-      hero_eyebrow: "Enquêtes · Safeguarding · Conformité",
-      hero_title: "Protéger les personnes.<br>Renforcer <em>l'intégrité.</em>",
+      hero_eyebrow: "Enquêtes · Safeguarding · Conformité internationale",
+      hero_title: "Faire la lumière sur les faits.<br>Renforcer <em>l'intégrité.</em>",
       hero_lead:
-        "J'aide les organisations internationales à <strong>enquêter sur les fautes, prévenir la fraude et bâtir des environnements de travail plus sûrs</strong>. Indépendante, attentive aux traumatismes et trilingue — plus de 13 ans d'expérience de terrain dans plus de 15 pays.",
-      hero_cta1: "Parlons de votre dossier",
+        "Riche de 13 ans d'expérience de terrain au sein du secteur international et de la santé, je me spécialise depuis plus de 6 ans dans la conduite d'enquêtes complexes et sensibles (harcèlement moral, harcèlement sexuel, fraude). J'apporte la <strong>rigueur analytique</strong> qui transforme des situations complexes en faits établis, au service d'une gouvernance solide et durable.",
+      hero_cta1: "Sécurisez l'intégrité de votre organisation",
       hero_cta2: "Comment je peux aider",
       hero_badge_title: "Enquêtrice qualifiée CHS Alliance",
       hero_badge_sub: "Niveaux 1 · 2 · 3 — Certifiée",
-      trust_label: "Elles m'ont fait confiance",
+      trust_label: "Ils m'ont fait confiance",
       trust_others: "Universités & hôpitaux",
 
       svc_eyebrow: "Services",
       svc_title: "Comment je peux aider <em>votre organisation</em>",
       svc_lede:
         "D'une enquête sensible ponctuelle à un dispositif complet de safeguarding — des missions adaptées à votre contexte, à distance ou sur le terrain.",
-      svc_1_title: "Enquêtes PSEAH & fautes comportementales",
+      svc_1_title: "Enquêtes sur le harcèlement & les manquements au code de conduite",
       svc_1_desc:
-        "Enquêtes indépendantes et attentives aux traumatismes sur l'exploitation, les abus et le harcèlement sexuels et les fautes comportementales — de la saisine à un rapport exploitable.",
+        "Enquêtes indépendantes, menées avec une approche sensible au trauma, portant sur le harcèlement moral et sexuel, les abus et les manquements au code de conduite — de la saisine à un rapport exploitable.",
       svc_1_tag1: "Cartographie des risques",
       svc_1_tag2: "Entretiens",
       svc_1_tag3: "Rapport d'enquête",
@@ -262,18 +263,18 @@
       svc_3_tag1: "Rédaction de politiques",
       svc_3_tag2: "Notes de conseil",
       svc_3_tag3: "Mécanismes d'alerte",
-      svc_4_title: "Formation & renforcement des capacités",
+      svc_4_title: "Mentorat & renforcement des capacités",
       svc_4_desc:
-        "Formations pratiques aux techniques d'enquête et à la PSEAH pour points focaux, managers et équipes terrain — conçues et animées en français, anglais ou espagnol.",
-      svc_4_tag1: "Techniques d'enquête",
-      svc_4_tag2: "Sessions PSEAH",
-      svc_4_tag3: "Capacités locales",
-      svc_5_title: "Revue de politiques & supports de formation",
+        "Programmes de transfert de connaissances qui professionnalisent les équipes internes aux techniques d'entretien forensique et à la gestion des cas de SEAH — pour gérer les crises futures en autonomie et réduire la dépendance externe.",
+      svc_4_tag1: "Entretiens forensiques",
+      svc_4_tag2: "Gestion des dossiers",
+      svc_4_tag3: "Équipes internes",
+      svc_5_title: "Audit de politiques & gouvernance",
       svc_5_desc:
-        "Assurance qualité indépendante de vos politiques de safeguarding, codes de conduite et ressources pédagogiques — pour qu'ils fonctionnent sur le terrain, pas seulement sur le papier.",
-      svc_5_tag1: "Analyse des écarts",
-      svc_5_tag2: "Assurance qualité",
-      svc_5_tag3: "Recommandations",
+        "Un audit stratégique des cadres de gouvernance, codes de conduite et mécanismes d'alerte — pour qu'ils répondent aux exigences de conformité de vos bailleurs et partenaires.",
+      svc_5_tag1: "Audit de gouvernance",
+      svc_5_tag2: "Mécanismes d'alerte",
+      svc_5_tag3: "Prêt pour les bailleurs",
       svc_6_title: "Gestion de projets complexes",
       svc_6_desc:
         "Pilotage de bout en bout de projets humanitaires et de santé : méthodologie Prince 2, conduite du changement, matrices de risques et coordination des parties prenantes.",
@@ -283,30 +284,30 @@
       svc_note:
         "Chaque mission est traitée dans la plus stricte confidentialité. Cliquez sur un service pour démarrer la conversation.",
 
-      apr_eyebrow: "Méthode",
-      apr_title: "Un processus clair, <em>du premier échange au rapport final</em>",
-      apr_1_title: "Consultation confidentielle",
+      apr_eyebrow: "Notre approche",
+      apr_title: "Une recherche de faits <em>rigoureuse et humaine</em>",
+      apr_1_title: "Neutralité & indépendance",
       apr_1_desc:
-        "Exposez-moi votre situation — gratuitement et en toute confidentialité. Je réponds sous 48 heures.",
-      apr_2_title: "Cadrage & proposition",
+        "Une perspective externe et objective qui élimine les conflits d'intérêts et garantit la validité du rapport.",
+      apr_2_title: "Rigueur analytique",
       apr_2_desc:
-        "Périmètre, méthodologie, calendrier et honoraires transparents — validés ensemble avant tout démarrage.",
-      apr_3_title: "Réalisation",
+        "Précision analytique et techniques éprouvées, structurées par la méthodologie Prince 2 pour une gestion de cas irréprochable.",
+      apr_3_title: "Approche sensible au trauma",
       apr_3_desc:
-        "À distance ou sur le terrain : un travail fondé sur les preuves, attentif aux traumatismes, avec des points réguliers au rythme de votre dossier.",
-      apr_4_title: "Conclusions & suivi",
+        "Un environnement sécurisé pour recueillir des informations de haute qualité sans revictimisation.",
+      apr_4_title: "Conformité & méthodologie",
       apr_4_desc:
-        "Des conclusions et recommandations actionnables — et un accompagnement pour les mettre en œuvre et renforcer durablement votre organisation.",
+        "Un alignement avec les normes de la CHS Alliance, qui relie les allégations éthiques aux faits juridiques et forensiques.",
       apr_note:
-        "<strong>La confidentialité, d'abord et toujours.</strong> Méthodologies centrées sur les survivant·e·s, traitement sécurisé des preuves et des données, et indépendance à chaque étape du processus.",
+        "<strong>La confidentialité, d'abord et toujours.</strong> Un processus sécurisé, confidentiel et juridiquement solide qui protège à la fois les personnes et l'intégrité de la mission.",
 
       about_caption: "Basée en France · Missions dans le monde entier",
-      about_eyebrow: "Pourquoi travailler avec moi",
+      about_eyebrow: "Raisons de travailler avec moi",
       about_title: "La rigueur du terrain, <em>une pratique centrée sur l'humain</em>",
       about_p1:
-        "J'ai passé plus de 13 ans au sein des organisations que j'accompagne aujourd'hui — <strong>CICR, MSF, UNFPA, UNICEF</strong>, hôpitaux universitaires et écoles de commerce — entre RH, finance, enquêtes, safeguarding et gestion de programmes. Je sais ce qu'un dossier sensible représente de l'intérieur, et ce qu'il faut pour le résoudre correctement.",
+        "Je réunis plus de 13 ans d'expérience acquise au sein d'organisations internationales de premier plan — <strong>CICR, MSF, UNFPA et UNICEF</strong> — dont plus de 6 ans consacrés aux enquêtes indépendantes sur le harcèlement, la fraude et les manquements au code de conduite.",
       about_p2:
-        "Cela signifie des enquêtes qui respectent à la fois les personnes concernées et les réalités du terrain — menées avec l'indépendance, la discrétion et la rigueur analytique qu'attendent vos instances et vos bailleurs.",
+        "Enquêtrice qualifiée (CHS Alliance Niveaux 1, 2 & 3), titulaire d'un Master en droit (Droits de l'Homme & Bioéthique) et Certified Fraud Examiner (en cours), j'allie la rigueur de la méthodologie Prince 2 à une approche sensible au trauma pour établir les faits — dans 21 pays sur quatre continents.",
       stat_years: "Ans d'expérience",
       stat_countries: "Pays",
       stat_orgs: "Organisations",
@@ -319,17 +320,17 @@
       xp_eyebrow: "Parcours",
       xp_title: "Là où cette expérience <em>a été forgée</em>",
       xp_lede:
-        "Une carrière construite entre agences onusiennes, ONG, hôpitaux et secteur privé — au siège comme sur le terrain.",
+        "Une carrière construite entre le secteur privé, les agences onusiennes, les ONG, les associations locales et les hôpitaux — au siège comme sur le terrain.",
       xp_1_date: "Oct. 2023 — Aujourd'hui",
       xp_1_role: "Consultante en enquêtes & formatrice",
       xp_1_org: "OSACO · UNICEF · MSF · Écoles de commerce & universités",
       xp_1_detail:
-        "<ul><li>Enquêtes sur fautes comportementales, abus et corruption : cartographie des risques, entretiens approfondis, rapports analytiques.</li><li>Déploiements en Eswatini, Côte d'Ivoire, Éthiopie et Cameroun pour appuyer les enquêtes et renforcer les capacités locales.</li><li>Enquêtes à distance : France, Singapour, Kenya, Tanzanie, Rwanda, Yémen, Pérou, Gambie, Tchad et RDC.</li><li>Formations aux techniques d'enquête et sessions d'information PSEAH.</li></ul>",
+        "<ul><li>Enquêtes sur les manquements au code de conduite, les abus et la corruption : cartographie des risques, entretiens approfondis, rapports analytiques.</li><li>Déploiements en Eswatini, Côte d'Ivoire, Éthiopie et Cameroun pour appuyer les enquêtes et renforcer les capacités locales.</li><li>Enquêtes à distance : France, Singapour, Kenya, Tanzanie, Rwanda, Yémen, Pérou, Gambie, Tchad et RDC.</li><li>Formations aux techniques d'enquête et sessions d'information sur la prévention du harcèlement et des abus.</li></ul>",
       xp_2_date: "Juil. 2024 — Mai 2025",
       xp_2_role: "Consultante en enquêtes",
       xp_2_org: "UNFPA — À distance",
       xp_2_detail:
-        "<ul><li>Saisine et conduite d'enquêtes sur des allégations de PSEAH, fraude et corruption.</li><li>Gestion complète des dossiers : entretiens, analyse des preuves, rédaction de rapports.</li><li>Notes de conseil renforçant l'intégrité, la conformité et la redevabilité.</li></ul>",
+        "<ul><li>Saisine et conduite d'enquêtes sur des allégations de harcèlement, fraude et corruption.</li><li>Gestion complète des dossiers : entretiens, analyse des preuves, rédaction de rapports.</li><li>Notes de conseil renforçant l'intégrité, la conformité et la redevabilité.</li></ul>",
       xp_3_date: "Juil. 2022 — Mai 2024",
       xp_3_role: "Cheffe de projets — Stratégie & efficience",
       xp_3_org: "CHU Saint-Pierre & Fondation Saint-Pierre — Bruxelles",
@@ -339,7 +340,7 @@
       xp_4_role: "Membre du comité comportemental (GAREC)",
       xp_4_org: "Médecins Sans Frontières — À distance",
       xp_4_detail:
-        "<ul><li>Mise en place du comité comportemental et rédaction de politiques éthiques.</li><li>Diffusion du mécanisme d'alerte ; enquêtes sur les plaintes signalées.</li><li>Conception de formations pour un environnement de travail inclusif et sûr.</li></ul>",
+        "<ul><li>Membre du comité comportemental GAREC : participation à la rédaction de politiques éthiques.</li><li>Enquêtes sur les plaintes signalées et diffusion du mécanisme d'alerte.</li><li>Participation à la conception de formations pour un environnement de travail inclusif et sûr.</li></ul>",
       xp_5_date: "Janv. 2021 — Juil. 2022",
       xp_5_role: "Coordinatrice adjointe — Médiation interculturelle",
       xp_5_org: "BELRefugees — Bruxelles",
@@ -362,14 +363,14 @@
         "<ul><li>Gestion de trésorerie sous SAP ; projets de lean management et d'amélioration continue.</li><li>Négociation avec des DAF et PDG sur les incitations fiscales R&D — 850 K€ de revenus, 36 nouveaux clients.</li></ul>",
 
       cred_eyebrow: "Références",
-      cred_title: "Qualifiée, certifiée, <em>toujours en apprentissage</em>",
+      cred_title: "Qualifiée, certifiée, <em>en évolution permanente</em>",
       edu_heading: "Formation",
       cert_heading: "Certifications & formations",
       edu_1_degree: "Master de spécialisation en droit",
       edu_1_field: "Droits humains — bioéthique, histoire, philosophie, sociologie",
       edu_1_place: "Université Saint-Louis, Bruxelles, Belgique",
       edu_2_degree: "Master en management",
-      edu_2_field: "Gestion d'entreprise",
+      edu_2_field: "Business administration",
       edu_2_place: "Burgundy School of Business, Dijon, France",
       edu_3_degree: "Échange académique",
       edu_3_field: "Études internationales",
@@ -393,7 +394,7 @@
       ct_eyebrow: "Contact",
       ct_title: "Parlons de <em>la façon dont je peux aider.</em>",
       ct_lede:
-        "Que vous fassiez face à un dossier sensible aujourd'hui ou que vous renforciez vos dispositifs pour demain — le premier échange est gratuit et confidentiel.",
+        "Qu'il s'agisse d'allégations de non-respect de votre code de conduite interne, de la formation de vos enquêteurs internes ou de la revue de vos processus — le premier échange est gratuit et confidentiel.",
       ct_email: "Email",
       ct_phone: "Téléphone / WhatsApp",
       ct_location: "Localisation",
@@ -405,7 +406,7 @@
       ct_f_email: "Email",
       ct_f_email_ph: "vous@organisation.org",
       ct_f_subject: "Objet",
-      ct_f_subject_ph: "ex. Appui à une enquête PSEAH",
+      ct_f_subject_ph: "ex. Appui à une enquête interne",
       ct_f_message: "Message",
       ct_f_message_ph:
         "Décrivez brièvement votre situation ou vos besoins — aucun détail confidentiel à ce stade.",
@@ -426,6 +427,7 @@
       fp_leg_field: "Missions sur le terrain",
       fp_leg_remote: "Enquêtes à distance",
 
+      footer_tagline: "Enquêtes · Safeguarding · Conformité internationale",
       footer_rights: "© {year} Jennifer Calmelat. Tous droits réservés.",
     },
 
@@ -433,18 +435,18 @@
       title_tag: "Jennifer Calmelat — Consultora en investigaciones y salvaguarda",
 
       nav_services: "Servicios",
-      nav_approach: "Método",
-      nav_about: "Por qué yo",
+      nav_approach: "Enfoque",
+      nav_about: "Sobre mí",
       nav_experience: "Trayectoria",
       nav_credentials: "Credenciales",
       nav_contact: "Contacto",
-      nav_cta: "Agenda una consulta",
+      nav_cta: "Agenda una consulta estratégica",
 
-      hero_eyebrow: "Investigaciones · Salvaguarda · Cumplimiento",
-      hero_title: "Proteger a las personas.<br>Fortalecer <em>la integridad.</em>",
+      hero_eyebrow: "Investigaciones · Salvaguarda · Cumplimiento Internacional",
+      hero_title: "Esclarecer los hechos.<br>Fortalecer <em>la integridad.</em>",
       hero_lead:
-        "Ayudo a organizaciones internacionales a <strong>investigar conductas indebidas, prevenir el fraude y construir entornos de trabajo más seguros</strong>. Independiente, con enfoque sensible al trauma y trilingüe — más de 13 años de experiencia en terreno en más de 15 países.",
-      hero_cta1: "Hablemos de tu caso",
+        "Respaldada por 13 años de experiencia en el terreno global, me especializo desde hace más de 6 años en investigaciones complejas y sensibles (conductas indebidas, fraude, PSEAH). <strong>Rigor analítico y enfoque sensible al trauma</strong> para transformar la ambigüedad en hechos probados.",
+      hero_cta1: "Asegure la integridad de su organización",
       hero_cta2: "Cómo puedo ayudarte",
       hero_badge_title: "Investigadora cualificada por CHS Alliance",
       hero_badge_sub: "Niveles 1 · 2 · 3 — Certificada",
@@ -473,18 +475,18 @@
       svc_3_tag1: "Redacción de políticas",
       svc_3_tag2: "Notas de asesoría",
       svc_3_tag3: "Mecanismos de denuncia",
-      svc_4_title: "Formación y fortalecimiento de capacidades",
+      svc_4_title: "Mentoría y capacitación de investigadores",
       svc_4_desc:
-        "Formación práctica en técnicas de investigación y PSEAH para puntos focales, directivos y equipos de terreno — diseñada e impartida en español, francés o inglés.",
-      svc_4_tag1: "Técnicas de investigación",
-      svc_4_tag2: "Sesiones PSEAH",
-      svc_4_tag3: "Capacidad local",
-      svc_5_title: "Revisión de políticas y materiales de formación",
+        "Programas de transferencia de conocimiento que profesionalizan a los equipos internos en técnicas de entrevista forense y gestión de casos de SEAH — para gestionar crisis futuras con autonomía y reducir la dependencia externa.",
+      svc_4_tag1: "Entrevista forense",
+      svc_4_tag2: "Gestión de casos",
+      svc_4_tag3: "Equipos internos",
+      svc_5_title: "Auditoría de políticas y gobernanza",
       svc_5_desc:
-        "Control de calidad independiente de tus políticas de salvaguarda, códigos de conducta y recursos formativos — para que funcionen en la práctica, no solo sobre el papel.",
-      svc_5_tag1: "Análisis de brechas",
-      svc_5_tag2: "Control de calidad",
-      svc_5_tag3: "Recomendaciones",
+        "Una auditoría estratégica de marcos de gobernanza, códigos de conducta y mecanismos de denuncia — para que resistan el escrutinio de los donantes y auditores más rigurosos.",
+      svc_5_tag1: "Auditoría de gobernanza",
+      svc_5_tag2: "Mecanismos de denuncia",
+      svc_5_tag3: "Listo para donantes",
       svc_6_title: "Gestión de proyectos complejos",
       svc_6_desc:
         "Gestión integral de proyectos humanitarios y de salud: metodología Prince 2, gestión del cambio, matrices de riesgo y coordinación de actores.",
@@ -494,30 +496,30 @@
       svc_note:
         "Cada misión se trata con estricta confidencialidad. Haz clic en un servicio para iniciar la conversación.",
 
-      apr_eyebrow: "Método",
-      apr_title: "Un proceso claro, <em>de la primera llamada al informe final</em>",
-      apr_1_title: "Consulta confidencial",
+      apr_eyebrow: "Nuestro enfoque",
+      apr_title: "Una búsqueda de los hechos <em>rigurosa y humana</em>",
+      apr_1_title: "Objetividad e independencia",
       apr_1_desc:
-        "Cuéntame tu situación — sin coste y con total confidencialidad. Respondo en un plazo de 48 horas.",
-      apr_2_title: "Alcance y propuesta",
+        "Una visión externa y objetiva que elimina los conflictos de interés y aporta a la junta conclusiones imparciales y accionables.",
+      apr_2_title: "Rigor analítico",
       apr_2_desc:
-        "Alcance, metodología, calendario y honorarios transparentes — acordados antes de empezar cualquier trabajo.",
-      apr_3_title: "Ejecución",
+        "Precisión analítica y técnicas de investigación probadas, estructuradas con la metodología Prince 2.",
+      apr_3_title: "Sensibilidad al trauma",
       apr_3_desc:
-        "En remoto o desplegada en terreno: trabajo basado en evidencias y sensible al trauma, con seguimientos regulares al ritmo que requiera tu caso.",
-      apr_4_title: "Conclusiones y seguimiento",
+        "Un entorno seguro para recoger testimonios de alta calidad sin revictimización, centrado en el bienestar de la persona.",
+      apr_4_title: "Conformidad y metodología",
       apr_4_desc:
-        "Conclusiones y recomendaciones accionables — y acompañamiento para implementarlas y fortalecer tu organización a futuro.",
+        "Establece hechos verificables que conectan las alegaciones éticas con los hechos jurídicos y forenses, alineados con la CHS Alliance.",
       apr_note:
-        "<strong>Confidencialidad, primero y siempre.</strong> Metodologías centradas en las personas sobrevivientes, manejo seguro de pruebas y datos, e independencia en cada etapa del proceso.",
+        "<strong>Confidencialidad, primero y siempre.</strong> Un proceso seguro, confidencial y jurídicamente sólido que protege tanto a las personas como la integridad de la misión.",
 
       about_caption: "Con base en Francia · Trabajo en todo el mundo",
-      about_eyebrow: "Por qué trabajar conmigo",
+      about_eyebrow: "Razones para trabajar conmigo",
       about_title: "Rigor probado en terreno, <em>práctica centrada en las personas</em>",
       about_p1:
-        "He pasado más de 13 años dentro de las organizaciones a las que hoy presto servicio — <strong>CICR, MSF, UNFPA, UNICEF</strong>, hospitales universitarios y escuelas de negocios — entre RR. HH., finanzas, investigaciones, salvaguarda y gestión de programas. Sé cómo se vive un caso sensible desde dentro, y qué hace falta para resolverlo correctamente.",
+        "Reúno más de 13 años de experiencia adquirida en organizaciones internacionales — <strong>CICR, MSF, UNFPA y UNICEF</strong> — con más de 6 años dedicados a investigaciones independientes sobre conductas indebidas, fraude y PSEAH.",
       about_p2:
-        "Eso significa investigaciones que respetan tanto a las personas implicadas como las realidades del terreno — con la independencia, discreción y rigor analítico que esperan tu junta y tus donantes.",
+        "Investigadora cualificada (CHS Alliance Niveles 1, 2 y 3), Máster en Derecho (Derechos Humanos y Bioética) y Certified Fraud Examiner (en curso), combino el rigor de la metodología Prince 2 con un enfoque sensible al trauma para esclarecer los hechos — en 21 países y cuatro continentes.",
       stat_years: "Años de experiencia",
       stat_countries: "Países",
       stat_orgs: "Organizaciones",
@@ -530,7 +532,7 @@
       xp_eyebrow: "Trayectoria",
       xp_title: "Dónde se forjó <em>esta experiencia</em>",
       xp_lede:
-        "Una carrera construida entre agencias de la ONU, ONG, hospitales y el sector privado — en sede y en terreno.",
+        "Una carrera construida entre el sector privado, las agencias de la ONU, las ONG, las asociaciones locales y los hospitales — en sede y en terreno.",
       xp_1_date: "Oct. 2023 — Actualidad",
       xp_1_role: "Consultora en investigaciones y formadora",
       xp_1_org: "OSACO · UNICEF · MSF · Escuelas de negocios y universidades",
@@ -550,7 +552,7 @@
       xp_4_role: "Miembro del Comité de Conducta (GAREC)",
       xp_4_org: "Médicos Sin Fronteras — Remoto",
       xp_4_detail:
-        "<ul><li>Implementación del Comité de Conducta y redacción de políticas éticas.</li><li>Difusión del mecanismo de denuncia; investigación de las quejas recibidas.</li><li>Diseño de formaciones para un entorno de trabajo inclusivo y seguro.</li></ul>",
+        "<ul><li>Miembro del Comité de Conducta (GAREC): participación en la redacción de políticas éticas.</li><li>Investigación de las quejas recibidas y difusión del mecanismo de denuncia.</li><li>Participación en el diseño de formaciones para un entorno de trabajo inclusivo y seguro.</li></ul>",
       xp_5_date: "Ene. 2021 — Jul. 2022",
       xp_5_role: "Coordinadora adjunta — Mediación intercultural",
       xp_5_org: "BELRefugees — Bruselas",
@@ -573,7 +575,7 @@
         "<ul><li>Gestión de tesorería en SAP; proyectos de lean management y mejora continua.</li><li>Negociación con CFO y CEO sobre incentivos fiscales de I+D — 850 K€ de ingresos, 36 nuevos clientes.</li></ul>",
 
       cred_eyebrow: "Credenciales",
-      cred_title: "Cualificada, certificada <em>y siempre aprendiendo</em>",
+      cred_title: "Cualificada, certificada <em>y en constante evolución</em>",
       edu_heading: "Formación",
       cert_heading: "Certificaciones y cursos",
       edu_1_degree: "Máster de especialización en Derecho",
@@ -604,7 +606,7 @@
       ct_eyebrow: "Contacto",
       ct_title: "Hablemos de <em>cómo puedo ayudarte.</em>",
       ct_lede:
-        "Tanto si afrontas un caso sensible ahora mismo como si quieres reforzar tus salvaguardas para el futuro — la primera conversación es gratuita y confidencial.",
+        "Ya se trate de alegaciones de incumplimiento de tu código de conducta interno, de la formación de tus investigadores internos o de la revisión de tus procesos — la primera conversación es gratuita y confidencial.",
       ct_email: "Email",
       ct_phone: "Teléfono / WhatsApp",
       ct_location: "Ubicación",
@@ -637,6 +639,7 @@
       fp_leg_field: "Misiones en terreno",
       fp_leg_remote: "Investigaciones en remoto",
 
+      footer_tagline: "Investigaciones · Salvaguarda · Cumplimiento Internacional",
       footer_rights: "© {year} Jennifer Calmelat. Todos los derechos reservados.",
     },
   };
