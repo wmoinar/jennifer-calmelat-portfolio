@@ -215,6 +215,24 @@
       fp_leg_field: "On-site missions",
       fp_leg_remote: "Remote investigations",
 
+      faq_eyebrow: "FAQ",
+      faq_title: "Frequently asked <em>questions</em>",
+      faq_lede:
+        "Straight answers to what Boards and legal teams ask before an engagement.",
+      faq_q1: "When should an organization hire an external investigator?",
+      faq_a1:
+        "When allegations carry high legal, financial, or reputational risks, securing external expertise is a critical safeguarding measure. It is also essential when a real or perceived conflict of interest arises, or if the organization lacks dedicated in-house resources trained to handle complex inquiries without disrupting daily operations.",
+      faq_q2: "Why not use our internal Legal or HR department to conduct the investigation?",
+      faq_a2:
+        "Investigative work requires highly specialized techniques (evidence preservation, forensic interviewing) that HR and Legal teams may not have the capacity or specific training to perform. And if the team investigating is also responsible for recommending or deciding on administrative actions, it creates a conflict of interest that weakens the credibility of the entire process. Leaving investigations to untrained staff can severely damage both the case and operational trust.",
+      faq_q3: 'What does a "trauma-informed" approach mean in practice?',
+      faq_a3:
+        "It is a specialized interviewing methodology that prioritizes the psychological safety and dignity of all participants. By mitigating stress and preventing re-traumatization, this human-centred practice fosters the trust required to elicit highly accurate disclosures and gather defensible evidence.",
+      faq_q4:
+        "What if you are unavailable, the case needs a language you don't speak, or it requires highly specialized expertise (such as IT / digital forensics)?",
+      faq_a4:
+        "My primary commitment is the objectivity, rigour and defensibility of the investigation. If I am temporarily unavailable, if the context requires a specific language I don't master, or if the case demands highly specialized skills (digital forensics, complex financial-data auditing, or cybercrime investigation), I draw on my international network of trusted investigators and certified experts (forensic specialists, survivor-care professionals, legal advisors) — to refer you to the right colleague or bring them in to secure the integrity of your procedure.",
+
       footer_tagline: "Investigations · Safeguarding · International Compliance",
       footer_rights: "© {year} Jennifer Calmelat. All rights reserved.",
     },
@@ -427,6 +445,24 @@
       fp_leg_field: "Missions sur le terrain",
       fp_leg_remote: "Enquêtes à distance",
 
+      faq_eyebrow: "FAQ",
+      faq_title: "Questions <em>fréquentes</em>",
+      faq_lede:
+        "Des réponses claires à ce que les conseils et les services juridiques demandent avant une mission.",
+      faq_q1: "Quand une organisation doit-elle faire appel à une enquêtrice externe ?",
+      faq_a1:
+        "Lorsqu'un signalement présente un risque juridique, financier ou réputationnel élevé, faire appel à une expertise externe est une mesure de sécurité essentielle. C'est également indispensable en cas de conflit d'intérêts réel ou perçu, ou lorsque l'organisation ne dispose pas en interne de ressources spécifiquement formées et disponibles pour mener des investigations rigoureuses sans interrompre ses opérations courantes.",
+      faq_q2: "Pourquoi ne pas confier l'enquête à notre service juridique ou RH interne ?",
+      faq_a2:
+        "Mener une enquête requiert des compétences techniques très spécifiques (techniques d'entretien, préservation des preuves) que les équipes RH ou juridiques n'ont pas toujours le temps ou la formation d'appliquer. De plus, si le service qui enquête est aussi celui qui conseille la direction sur les sanctions, cela crée une perception de conflit d'intérêts qui peut fragiliser la validité de la procédure. Confier cette tâche à une personne non formée peut gravement nuire à l'enquête et à la confiance dans l'institution.",
+      faq_q3: "Qu'est-ce qu'une approche « sensible au trauma » (trauma-informed) ?",
+      faq_a3:
+        "Il s'agit d'une méthodologie rigoureuse qui place la sécurité psychologique et le bien-être des personnes au centre du processus. En minimisant le stress et en évitant toute revictimisation, cette approche établit une relation de confiance propice au recueil de témoignages précis et de preuves d'une qualité irréprochable.",
+      faq_q4:
+        "Que se passe-t-il si vous n'êtes pas disponible, si le dossier exige une langue que vous ne maîtrisez pas ou une expertise très spécialisée (comme l'informatique légale / IT forensics) ?",
+      faq_a4:
+        "Mon engagement premier est de garantir l'objectivité, la rigueur et la validité de l'enquête. Si je ne suis pas disponible immédiatement, si le contexte exige une langue que je ne maîtrise pas, ou si le dossier requiert des compétences ultra-spécialisées (informatique légale, analyse de données financières complexes, cybercriminalité), je m'appuie sur un réseau international d'enquêteurs de confiance et de spécialistes certifiés (experts forensiques, psychologues, juristes) : je peux vous orienter vers le bon interlocuteur ou le mobiliser en renfort pour sécuriser l'intégrité de votre procédure.",
+
       footer_tagline: "Enquêtes · Safeguarding · Conformité internationale",
       footer_rights: "© {year} Jennifer Calmelat. Tous droits réservés.",
     },
@@ -638,6 +674,24 @@
         "21 países en cuatro continentes — despliegues en terreno e investigaciones en remoto, en tres idiomas.",
       fp_leg_field: "Misiones en terreno",
       fp_leg_remote: "Investigaciones en remoto",
+
+      faq_eyebrow: "FAQ",
+      faq_title: "Preguntas <em>frecuentes</em>",
+      faq_lede:
+        "Respuestas claras a lo que las juntas y los equipos legales preguntan antes de una colaboración.",
+      faq_q1: "¿Cuándo debe una organización contratar a un investigador externo?",
+      faq_a1:
+        "Cuando una denuncia implica un riesgo legal, financiero o reputacional significativo, externalizar la investigación es una medida de protección crítica. También es indispensable cuando existe un conflicto de intereses real o percibido, o si la organización carece de personal capacitado y disponible exclusivamente para llevar a cabo indagaciones rigurosas sin detener sus operaciones habituales.",
+      faq_q2: "¿Por qué no encargar la investigación a nuestro departamento Legal o de RR. HH. interno?",
+      faq_a2:
+        "Conducir una investigación requiere destrezas forenses muy específicas (técnicas de entrevista, gestión de evidencias) que los equipos de RR. HH. o legales no siempre tienen el tiempo o la formación para ejecutar. Además, si el mismo equipo que investiga debe luego asesorar a la dirección sobre las medidas disciplinarias, se genera un conflicto de intereses que puede invalidar la neutralidad del proceso. Delegar esto en personal no entrenado puede perjudicar seriamente la investigación y la confianza en la institución.",
+      faq_q3: "¿Qué significa un enfoque «sensible al trauma» (trauma-informed) en una investigación?",
+      faq_a3:
+        "Es una metodología técnica que prioriza la seguridad psicológica y el bienestar de las personas involucradas. Al reducir el estrés del proceso y evitar la revictimización, este enfoque genera la confianza necesaria para obtener testimonios altamente precisos y evidencias sólidas que sustenten decisiones directivas justas.",
+      faq_q4:
+        "¿Qué sucede si no está disponible, el caso requiere un idioma que no domina o exige una experiencia muy especializada (como informática forense / IT forensics)?",
+      faq_a4:
+        "Mi prioridad absoluta es garantizar la objetividad, el rigor y la validez de la investigación. Si no tengo disponibilidad inmediata, si el contexto exige un idioma que no domino, o si el caso requiere competencias altamente especializadas (informática forense, auditorías financieras complejas o ciberdelincuencia), me apoyo en una sólida red internacional de investigadores de confianza y especialistas certificados (expertos forenses, psicólogos, asesores legales): puedo recomendarle al colega adecuado o movilizarlo como refuerzo para asegurar la integridad de todo el proceso.",
 
       footer_tagline: "Investigaciones · Salvaguarda · Cumplimiento Internacional",
       footer_rights: "© {year} Jennifer Calmelat. Todos los derechos reservados.",
