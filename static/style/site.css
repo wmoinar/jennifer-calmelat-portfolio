@@ -777,6 +777,31 @@ body.menu-locked .nav-burger span:nth-child(3) { transform: translateY(-6.6px) r
   line-height: 1.7;
   color: var(--ink-2);
 }
+.faq-a ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 14px;
+}
+.faq-a li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 11px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.faq-a li:last-child { margin-bottom: 0; }
+.faq-a li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1.4px solid var(--acc);
+}
+.faq-a li strong { color: var(--ink); font-weight: 600; }
 
 @media (max-width: 767px) {
   .faq-item summary { gap: 16px; align-items: start; }
