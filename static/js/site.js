@@ -15,7 +15,7 @@
       nav_approach: "Approach",
       nav_about: "Why me",
       nav_experience: "Track record",
-      nav_credentials: "Credentials",
+      nav_credentials: "Qualifications",
       nav_contact: "Contact",
       nav_cta: "Book a strategic consultation",
 
@@ -96,7 +96,7 @@
       about_p1:
         "I bring 13+ years of experience gained within leading international organizations — <strong>ICRC, MSF, UNFPA and UNICEF</strong> — with more than 6 years dedicated to independent investigations into misconduct, fraud and PSEAH.",
       about_p2:
-        "A qualified investigator (CHS Alliance Tier 1, 2 & 3), Master of Law in Human Rights & Bioethics and Certified Fraud Examiner (ongoing), I combine the rigour of Prince 2 project management with a trauma-informed approach to fact-finding — across 21 countries and four continents.",
+        "A qualified investigator (CHS Alliance Tier 1, 2 & 3) and Master of Law in Human Rights & Bioethics, I combine the rigour of Prince 2 project management with a trauma-informed approach to fact-finding — across 21 countries and four continents.",
       stat_years: "Years of experience",
       stat_countries: "Countries",
       stat_orgs: "Organizations",
@@ -112,7 +112,7 @@
         "A career built across the private sector, UN agencies, NGOs, local associations and hospitals — in headquarters and in the field.",
       xp_1_date: "Oct 2023 — Present",
       xp_1_role: "Investigation Consultant & Trainer",
-      xp_1_org: "OSACO · UNICEF · MSF · Business schools & universities",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Business schools, universities & private companies",
       xp_1_detail:
         "<ul><li>Investigations into behavioural misconduct, abuse and corruption: risk mapping, in-depth interviews, analytical reporting.</li><li>Deployed to Eswatini, Côte d'Ivoire, Ethiopia and Cameroon to support investigations and strengthen local capacity.</li><li>Remote investigations covering France, Singapore, Kenya, Tanzania, Rwanda, Yemen, Peru, The Gambia, Chad and DRC.</li><li>Training on investigative techniques and PSEAH information sessions.</li></ul>",
       xp_2_date: "Jul 2024 — May 2025",
@@ -151,7 +151,7 @@
       xp_8_detail:
         "<ul><li>Cash management in SAP; lean management and continuous improvement projects.</li><li>Negotiation with CFOs and CEOs on R&D fiscal incentives — €850K revenue, 36 new clients.</li></ul>",
 
-      cred_eyebrow: "Credentials",
+      cred_eyebrow: "Qualifications",
       cred_title: "Qualified, certified, <em>and always evolving</em>",
       edu_heading: "Education",
       cert_heading: "Certifications & training",
@@ -168,7 +168,6 @@
       edu_4_field: "Sociology of Organizations",
       edu_4_place: "Paris 12 University, France",
       cert_1_name: "Investigator Qualification Training Scheme — Tier 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Investigations Foundations",
       cert_3_date: "London — May 2025",
       cert_4_name: "PSEA, Global Safeguarding & Child Protection",
@@ -178,7 +177,6 @@
       cert_6_name: "BSAFE Security Training",
       cert_6_date: "July 2024",
       cert_certified: "Certified",
-      cert_ongoing: "Ongoing",
 
       ct_eyebrow: "Contact",
       ct_title: "Let's discuss <em>how I can help.</em>",
@@ -215,6 +213,33 @@
       fp_leg_field: "On-site missions",
       fp_leg_remote: "Remote investigations",
 
+      faq_eyebrow: "FAQ",
+      faq_title: "Frequently asked <em>questions</em>",
+      faq_lede:
+        "Straight answers to what Boards and legal teams ask before an engagement.",
+      faq_q1: "When should an organization hire an external investigator?",
+      faq_a1:
+        "When allegations carry high legal, financial, or reputational risks, securing external expertise is a critical safeguarding measure. It is also essential when a real or perceived conflict of interest arises, or if the organization lacks dedicated in-house resources trained to handle complex inquiries without disrupting daily operations.",
+      faq_q2: "Why not use our internal Legal or HR department to conduct the investigation?",
+      faq_a2:
+        "Investigative work requires highly specialized techniques (evidence preservation, forensic interviewing) that HR and Legal teams may not have the capacity or specific training to perform. And if the team investigating is also responsible for recommending or deciding on administrative actions, it creates a conflict of interest that weakens the credibility of the entire process. Leaving investigations to untrained staff can severely damage both the case and operational trust.",
+      faq_q3: 'What does a "trauma-informed" approach mean in practice?',
+      faq_a3:
+        "It is a specialized interviewing methodology that prioritizes the psychological safety and dignity of all participants. By mitigating stress and preventing re-traumatization, this human-centred practice fosters the trust required to elicit highly accurate disclosures and gather defensible evidence.",
+      faq_q4:
+        "What if you are unavailable, the case needs a language you don't speak, or it requires highly specialized expertise (such as IT / digital forensics)?",
+      faq_a4:
+        "My primary commitment is the objectivity, rigour and defensibility of the investigation. If I am temporarily unavailable, if the context requires a specific language I don't master, or if the case demands highly specialized skills (digital forensics, complex financial-data auditing, or cybercrime investigation), I draw on my international network of trusted investigators and certified experts (forensic specialists, survivor-care professionals, legal advisors) — to refer you to the right colleague or bring them in to secure the integrity of your procedure.",
+      faq_q5: "What are the recommended best practices to ensure the integrity and rigour of an investigation?",
+      faq_a5:
+        "<p>To guarantee a robust, ethical and legally defensible process aligned with international standards, several core best practices must be observed:</p><ul><li><strong>Reasonable timeframe:</strong> a maximum window of 6 months from the initial alert to the final decision by the Decision-Making Authority (DMA).</li><li><strong>External quality-assurance review:</strong> an independent third party evaluates the report and process to verify methodological soundness and objective findings.</li><li><strong>Co-investigative team:</strong> two investigators, aiming for gender parity and diverse backgrounds to broaden analytical perspective and secure safe interviews.</li><li><strong>Clear Terms of Reference (ToR):</strong> a precise mandate from the start, with a dedicated section on collaboration between the investigative team and the organization.</li><li><strong>Qualified interpretation:</strong> a certified interpreter whenever required by the complainant, witnesses or the Subject of Complaint (SOC).</li><li><strong>Externalized psychosocial support:</strong> anonymous, confidential support independent of the organization to safeguard every stakeholder's well-being throughout the process.</li></ul>",
+      faq_q6: "Who takes the final decision if the allegations are substantiated?",
+      faq_a6:
+        "<p>The final decision rests solely with the designated Decision-Making Authority (DMA) or committee defined in advance by the client organization. This strict separation of duties is both operational and legal:</p><ul><li><strong>Absolute impartiality:</strong> the decision-maker(s) must have had no direct or indirect involvement in conducting or supervising the investigation.</li><li><strong>Strict investigator boundaries:</strong> under no circumstances does the investigator (internal or external) make disciplinary, contractual or managerial decisions. An external investigator has no legal authority to impose sanctions.</li><li><strong>A decision-support tool:</strong> the investigator's role is strictly limited to objective fact-finding — delivering an impartial analysis, verifiable evidence and a structured final report based entirely on established facts.</li></ul>",
+      faq_q7: "How do you ensure the investigation rules and procedure are fully understood by all stakeholders?",
+      faq_a7:
+        "<p>Clarity, transparency and procedural predictability are vital to a fair and defensible process. Interview rules are structured as follows:</p><ul><li><strong>A prior formal invitation:</strong> an official written invitation sent in advance, outlining the framework, the participant's rights (such as the option to be accompanied) and practical arrangements, so they can prepare calmly.</li><li><strong>A systematic oral explanation:</strong> rights, procedural steps and ground rules are re-explained orally at the very start of the interview.</li><li><strong>Consensual recording and a written record:</strong> the session is recorded only with explicit consent; a written record — a detailed summary or, ideally, a verbatim transcript — is then provided for review and signature.</li><li><strong>Continuous dialogue:</strong> participants may ask questions beforehand, during the session and afterwards by email.</li><li><strong>Passive role of legal counsel:</strong> subject to the client organization's internal rules and the applicable jurisdiction, an attorney's presence may be permitted during an interview in the internal investigation — with a complainant, a witness or the Subject of Complaint (SOC). Where allowed, they attend strictly as a passive observer: monitoring procedural compliance without answering on the interviewee's behalf.</li></ul>",
+
       footer_tagline: "Investigations · Safeguarding · International Compliance",
       footer_rights: "© {year} Jennifer Calmelat. All rights reserved.",
     },
@@ -226,7 +251,7 @@
       nav_approach: "Approche",
       nav_about: "À propos",
       nav_experience: "Parcours",
-      nav_credentials: "Références",
+      nav_credentials: "Qualifications",
       nav_contact: "Contact",
       nav_cta: "Réserver une consultation stratégique",
 
@@ -307,7 +332,7 @@
       about_p1:
         "Je réunis plus de 13 ans d'expérience acquise au sein d'organisations internationales de premier plan — <strong>CICR, MSF, UNFPA et UNICEF</strong> — dont plus de 6 ans consacrés aux enquêtes indépendantes sur le harcèlement, la fraude et les manquements au code de conduite.",
       about_p2:
-        "Enquêtrice qualifiée (CHS Alliance Niveaux 1, 2 & 3), titulaire d'un Master en droit (Droits de l'Homme & Bioéthique) et Certified Fraud Examiner (en cours), j'allie la rigueur de la méthodologie Prince 2 à une approche sensible au trauma pour établir les faits — dans 21 pays sur quatre continents.",
+        "Enquêtrice qualifiée (CHS Alliance Niveaux 1, 2 & 3) et titulaire d'un Master en droit (Droits de l'Homme & Bioéthique), j'allie la rigueur de la méthodologie Prince 2 à une approche sensible au trauma pour établir les faits — dans 21 pays sur quatre continents.",
       stat_years: "Ans d'expérience",
       stat_countries: "Pays",
       stat_orgs: "Organisations",
@@ -323,7 +348,7 @@
         "Une carrière construite entre le secteur privé, les agences onusiennes, les ONG, les associations locales et les hôpitaux — au siège comme sur le terrain.",
       xp_1_date: "Oct. 2023 — Aujourd'hui",
       xp_1_role: "Consultante en enquêtes & formatrice",
-      xp_1_org: "OSACO · UNICEF · MSF · Écoles de commerce & universités",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Écoles de commerce, universités & entreprises privées",
       xp_1_detail:
         "<ul><li>Enquêtes sur les manquements au code de conduite, les abus et la corruption : cartographie des risques, entretiens approfondis, rapports analytiques.</li><li>Déploiements en Eswatini, Côte d'Ivoire, Éthiopie et Cameroun pour appuyer les enquêtes et renforcer les capacités locales.</li><li>Enquêtes à distance : France, Singapour, Kenya, Tanzanie, Rwanda, Yémen, Pérou, Gambie, Tchad et RDC.</li><li>Formations aux techniques d'enquête et sessions d'information sur la prévention du harcèlement et des abus.</li></ul>",
       xp_2_date: "Juil. 2024 — Mai 2025",
@@ -362,7 +387,7 @@
       xp_8_detail:
         "<ul><li>Gestion de trésorerie sous SAP ; projets de lean management et d'amélioration continue.</li><li>Négociation avec des DAF et PDG sur les incitations fiscales R&D — 850 K€ de revenus, 36 nouveaux clients.</li></ul>",
 
-      cred_eyebrow: "Références",
+      cred_eyebrow: "Qualifications",
       cred_title: "Qualifiée, certifiée, <em>en évolution permanente</em>",
       edu_heading: "Formation",
       cert_heading: "Certifications & formations",
@@ -379,7 +404,6 @@
       edu_4_field: "Sociologie des organisations",
       edu_4_place: "Université Paris 12, France",
       cert_1_name: "Investigator Qualification Training Scheme — Niveaux 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Fondamentaux des enquêtes",
       cert_3_date: "Londres — mai 2025",
       cert_4_name: "PSEA, safeguarding global & protection de l'enfance",
@@ -389,7 +413,6 @@
       cert_6_name: "Formation sécurité BSAFE",
       cert_6_date: "Juillet 2024",
       cert_certified: "Certifiée",
-      cert_ongoing: "En cours",
 
       ct_eyebrow: "Contact",
       ct_title: "Parlons de <em>la façon dont je peux aider.</em>",
@@ -427,6 +450,33 @@
       fp_leg_field: "Missions sur le terrain",
       fp_leg_remote: "Enquêtes à distance",
 
+      faq_eyebrow: "FAQ",
+      faq_title: "Questions <em>fréquentes</em>",
+      faq_lede:
+        "Des réponses claires à ce que les conseils et les services juridiques demandent avant une mission.",
+      faq_q1: "Quand une organisation doit-elle faire appel à une enquêtrice externe ?",
+      faq_a1:
+        "Lorsqu'un signalement présente un risque juridique, financier ou réputationnel élevé, faire appel à une expertise externe est une mesure de sécurité essentielle. C'est également indispensable en cas de conflit d'intérêts réel ou perçu, ou lorsque l'organisation ne dispose pas en interne de ressources spécifiquement formées et disponibles pour mener des investigations rigoureuses sans interrompre ses opérations courantes.",
+      faq_q2: "Pourquoi ne pas confier l'enquête à notre service juridique ou RH interne ?",
+      faq_a2:
+        "Mener une enquête requiert des compétences techniques très spécifiques (techniques d'entretien, préservation des preuves) que les équipes RH ou juridiques n'ont pas toujours le temps ou la formation d'appliquer. De plus, si le service qui enquête est aussi celui qui conseille la direction sur les sanctions, cela crée une perception de conflit d'intérêts qui peut fragiliser la validité de la procédure. Confier cette tâche à une personne non formée peut gravement nuire à l'enquête et à la confiance dans l'institution.",
+      faq_q3: "Qu'est-ce qu'une approche « sensible au trauma » (trauma-informed) ?",
+      faq_a3:
+        "Il s'agit d'une méthodologie rigoureuse qui place la sécurité psychologique et le bien-être des personnes au centre du processus. En minimisant le stress et en évitant toute revictimisation, cette approche établit une relation de confiance propice au recueil de témoignages précis et de preuves d'une qualité irréprochable.",
+      faq_q4:
+        "Que se passe-t-il si vous n'êtes pas disponible, si le dossier exige une langue que vous ne maîtrisez pas ou une expertise très spécialisée (comme l'informatique légale / IT forensics) ?",
+      faq_a4:
+        "Mon engagement premier est de garantir l'objectivité, la rigueur et la validité de l'enquête. Si je ne suis pas disponible immédiatement, si le contexte exige une langue que je ne maîtrise pas, ou si le dossier requiert des compétences ultra-spécialisées (informatique légale, analyse de données financières complexes, cybercriminalité), je m'appuie sur un réseau international d'enquêteurs de confiance et de spécialistes certifiés (experts forensiques, psychologues, juristes) : je peux vous orienter vers le bon interlocuteur ou le mobiliser en renfort pour sécuriser l'intégrité de votre procédure.",
+      faq_q5: "Quelles sont les bonnes pratiques recommandées pour garantir l'intégrité et la rigueur d'une enquête ?",
+      faq_a5:
+        "<p>Pour garantir un processus robuste, éthique et conforme aux standards internationaux (notamment la CHS Alliance), plusieurs règles d'or doivent être appliquées :</p><ul><li><strong>Un délai raisonnable :</strong> il est fortement recommandé de ne pas dépasser 6 mois entre la réception de l'alerte initiale et la décision finale de l'Autorité de Décision (DMA).</li><li><strong>L'assurance qualité externe :</strong> une revue réalisée par un tiers externe indépendant valide de manière impartiale la solidité méthodologique et l'objectivité des conclusions.</li><li><strong>La co-enquête :</strong> mener les investigations en binôme, en privilégiant la parité de genre et la diversité des profils pour limiter les biais cognitifs et sécuriser le recueil des témoignages.</li><li><strong>Des Termes de Référence (ToR) clairs :</strong> un mandat précis établi dès le départ, intégrant une section sur les modalités de collaboration entre l'enquêteur et l'organisation.</li><li><strong>L'interprétation qualifiée :</strong> le recours à un interprète certifié dès que les barrières linguistiques l'exigent pour le plaignant, les témoins ou la personne mise en cause (SOC).</li><li><strong>Le soutien psychosocial externalisé :</strong> un accès à un soutien anonyme, confidentiel et indépendant de l'organisation pour préserver le bien-être de chaque partie tout au long de la procédure.</li></ul>",
+      faq_q6: "Qui prend la décision finale si les allégations sont avérées ?",
+      faq_a6:
+        "<p>La décision finale incombe exclusivement à la personne décisionnaire ou au comité désigné en amont par l'organisation. Cette stricte séparation des fonctions est à la fois opérationnelle et légale :</p><ul><li><strong>Une étanchéité absolue :</strong> l'autorité de décision ne doit avoir participé, de près ou de loin, à la conduite ou à la supervision de l'enquête.</li><li><strong>La limite du mandat de l'enquêteur :</strong> en aucun cas l'enquêteur (interne ou externe) ne prend de décision managériale, disciplinaire ou contractuelle. L'enquêteur externe n'a aucune autorité légale pour imposer des sanctions.</li><li><strong>Un outil d'aide à la décision :</strong> le rôle de l'enquêteur se limite rigoureusement à la recherche objective des faits — une analyse impartiale, des preuves solides et un rapport final structuré, exclusivement fondé sur les faits.</li></ul>",
+      faq_q7: "Comment garantir que les règles et le déroulement de l'enquête soient compris par toutes les parties prenantes ?",
+      faq_a7:
+        "<p>La clarté, la transparence et la prévisibilité procédurale sont indispensables à un processus équitable. Les règles d'entretien sont structurées ainsi :</p><ul><li><strong>Une invitation formelle préalable :</strong> une convocation écrite officielle précisant le cadre de l'entretien, les droits de la personne (comme la possibilité d'être accompagnée) et les modalités pratiques, pour lui permettre de se préparer sereinement.</li><li><strong>Une explication orale systématique :</strong> les droits et le déroulement de la séance sont réexpliqués de vive voix au début de l'entretien.</li><li><strong>Un enregistrement consenti et un compte rendu :</strong> l'entretien n'est enregistré qu'avec l'accord explicite de la personne ; un compte rendu écrit — résumé détaillé ou, idéalement, transcription verbatim — est ensuite soumis à sa relecture et signé.</li><li><strong>Un espace d'échange continu :</strong> les personnes concernées peuvent poser leurs questions en amont, pendant l'entretien et après celui-ci par courriel.</li><li><strong>Le rôle passif de l'avocat :</strong> selon les règles internes de l'organisation cliente et la juridiction applicable, la présence d'un avocat peut être autorisée lors d'un entretien de l'enquête interne — avec un plaignant, un témoin ou la personne mise en cause (SOC). Le cas échéant, il assiste en observateur passif : il veille au respect de la procédure sans répondre à la place de la personne entendue.</li></ul>",
+
       footer_tagline: "Enquêtes · Safeguarding · Conformité internationale",
       footer_rights: "© {year} Jennifer Calmelat. Tous droits réservés.",
     },
@@ -438,7 +488,7 @@
       nav_approach: "Enfoque",
       nav_about: "Sobre mí",
       nav_experience: "Trayectoria",
-      nav_credentials: "Credenciales",
+      nav_credentials: "Cualificaciones",
       nav_contact: "Contacto",
       nav_cta: "Agenda una consulta estratégica",
 
@@ -519,7 +569,7 @@
       about_p1:
         "Reúno más de 13 años de experiencia adquirida en organizaciones internacionales — <strong>CICR, MSF, UNFPA y UNICEF</strong> — con más de 6 años dedicados a investigaciones independientes sobre conductas indebidas, fraude y PSEAH.",
       about_p2:
-        "Investigadora cualificada (CHS Alliance Niveles 1, 2 y 3), Máster en Derecho (Derechos Humanos y Bioética) y Certified Fraud Examiner (en curso), combino el rigor de la metodología Prince 2 con un enfoque sensible al trauma para esclarecer los hechos — en 21 países y cuatro continentes.",
+        "Investigadora cualificada (CHS Alliance Niveles 1, 2 y 3) y Máster en Derecho (Derechos Humanos y Bioética), combino el rigor de la metodología Prince 2 con un enfoque sensible al trauma para esclarecer los hechos — en 21 países y cuatro continentes.",
       stat_years: "Años de experiencia",
       stat_countries: "Países",
       stat_orgs: "Organizaciones",
@@ -535,7 +585,7 @@
         "Una carrera construida entre el sector privado, las agencias de la ONU, las ONG, las asociaciones locales y los hospitales — en sede y en terreno.",
       xp_1_date: "Oct. 2023 — Actualidad",
       xp_1_role: "Consultora en investigaciones y formadora",
-      xp_1_org: "OSACO · UNICEF · MSF · Escuelas de negocios y universidades",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Escuelas de negocios, universidades y empresas privadas",
       xp_1_detail:
         "<ul><li>Investigaciones sobre conductas indebidas, abusos y corrupción: mapeo de riesgos, entrevistas en profundidad, informes analíticos.</li><li>Despliegues en Esuatini, Costa de Marfil, Etiopía y Camerún para apoyar investigaciones y fortalecer la capacidad local.</li><li>Investigaciones en remoto: Francia, Singapur, Kenia, Tanzania, Ruanda, Yemen, Perú, Gambia, Chad y RDC.</li><li>Formación en técnicas de investigación y sesiones informativas sobre PSEAH.</li></ul>",
       xp_2_date: "Jul. 2024 — May. 2025",
@@ -574,7 +624,7 @@
       xp_8_detail:
         "<ul><li>Gestión de tesorería en SAP; proyectos de lean management y mejora continua.</li><li>Negociación con CFO y CEO sobre incentivos fiscales de I+D — 850 K€ de ingresos, 36 nuevos clientes.</li></ul>",
 
-      cred_eyebrow: "Credenciales",
+      cred_eyebrow: "Cualificaciones",
       cred_title: "Cualificada, certificada <em>y en constante evolución</em>",
       edu_heading: "Formación",
       cert_heading: "Certificaciones y cursos",
@@ -591,7 +641,6 @@
       edu_4_field: "Sociología de las organizaciones",
       edu_4_place: "Universidad París 12, Francia",
       cert_1_name: "Investigator Qualification Training Scheme — Niveles 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Fundamentos de investigaciones",
       cert_3_date: "Londres — mayo 2025",
       cert_4_name: "PSEA, salvaguarda global y protección de la infancia",
@@ -601,7 +650,6 @@
       cert_6_name: "Formación de seguridad BSAFE",
       cert_6_date: "Julio 2024",
       cert_certified: "Certificada",
-      cert_ongoing: "En curso",
 
       ct_eyebrow: "Contacto",
       ct_title: "Hablemos de <em>cómo puedo ayudarte.</em>",
@@ -638,6 +686,33 @@
         "21 países en cuatro continentes — despliegues en terreno e investigaciones en remoto, en tres idiomas.",
       fp_leg_field: "Misiones en terreno",
       fp_leg_remote: "Investigaciones en remoto",
+
+      faq_eyebrow: "FAQ",
+      faq_title: "Preguntas <em>frecuentes</em>",
+      faq_lede:
+        "Respuestas claras a lo que las juntas y los equipos legales preguntan antes de una colaboración.",
+      faq_q1: "¿Cuándo debe una organización contratar a un investigador externo?",
+      faq_a1:
+        "Cuando una denuncia implica un riesgo legal, financiero o reputacional significativo, externalizar la investigación es una medida de protección crítica. También es indispensable cuando existe un conflicto de intereses real o percibido, o si la organización carece de personal capacitado y disponible exclusivamente para llevar a cabo indagaciones rigurosas sin detener sus operaciones habituales.",
+      faq_q2: "¿Por qué no encargar la investigación a nuestro departamento Legal o de RR. HH. interno?",
+      faq_a2:
+        "Conducir una investigación requiere destrezas forenses muy específicas (técnicas de entrevista, gestión de evidencias) que los equipos de RR. HH. o legales no siempre tienen el tiempo o la formación para ejecutar. Además, si el mismo equipo que investiga debe luego asesorar a la dirección sobre las medidas disciplinarias, se genera un conflicto de intereses que puede invalidar la neutralidad del proceso. Delegar esto en personal no entrenado puede perjudicar seriamente la investigación y la confianza en la institución.",
+      faq_q3: "¿Qué significa un enfoque «sensible al trauma» (trauma-informed) en una investigación?",
+      faq_a3:
+        "Es una metodología técnica que prioriza la seguridad psicológica y el bienestar de las personas involucradas. Al reducir el estrés del proceso y evitar la revictimización, este enfoque genera la confianza necesaria para obtener testimonios altamente precisos y evidencias sólidas que sustenten decisiones directivas justas.",
+      faq_q4:
+        "¿Qué sucede si no está disponible, el caso requiere un idioma que no domina o exige una experiencia muy especializada (como informática forense / IT forensics)?",
+      faq_a4:
+        "Mi prioridad absoluta es garantizar la objetividad, el rigor y la validez de la investigación. Si no tengo disponibilidad inmediata, si el contexto exige un idioma que no domino, o si el caso requiere competencias altamente especializadas (informática forense, auditorías financieras complejas o ciberdelincuencia), me apoyo en una sólida red internacional de investigadores de confianza y especialistas certificados (expertos forenses, psicólogos, asesores legales): puedo recomendarle al colega adecuado o movilizarlo como refuerzo para asegurar la integridad de todo el proceso.",
+      faq_q5: "¿Cuáles son las buenas prácticas recomendadas para garantizar la integridad y el rigor de una investigación?",
+      faq_a5:
+        "<p>Para asegurar un proceso sólido, ético y alineado con los estándares internacionales, se deben implementar las siguientes prácticas fundamentales:</p><ul><li><strong>Plazo razonable:</strong> se recomienda firmemente un límite máximo de 6 meses desde la alerta original hasta la decisión final de la Autoridad de Toma de Decisiones (DMA).</li><li><strong>Aseguramiento de calidad externo:</strong> una revisión realizada por un tercero externo independiente que valida de forma objetiva la metodología aplicada y la solidez de las conclusiones.</li><li><strong>Equipo de co-investigación:</strong> desplegar dos investigadores, buscando en lo posible la paridad de género y la diversidad de trayectorias para enriquecer el análisis y optimizar las entrevistas.</li><li><strong>Términos de Referencia (ToR) claros:</strong> un mandato preciso desde el inicio, con una sección detallada sobre las modalidades de colaboración entre el equipo investigador y la organización.</li><li><strong>Traducción cualificada:</strong> contar con un intérprete certificado siempre que lo requieran las necesidades lingüísticas del denunciante, los testigos o el sujeto denunciado (SOC).</li><li><strong>Apoyo psicosocial externalizado:</strong> acceso a apoyo anónimo, confidencial e independiente de la organización para proteger el bienestar de cada parte durante todo el proceso.</li></ul>",
+      faq_q6: "¿Quién toma la decisión final si las alegaciones se determinan como probadas?",
+      faq_a6:
+        "<p>La decisión final corresponde exclusivamente a la persona o al comité de toma de decisiones definido previamente por la organización. Esta estricta separación de funciones es tanto operativa como legal:</p><ul><li><strong>Independencia absoluta:</strong> la autoridad encargada de decidir no debe haber participado, directa o indirectamente, en ninguna etapa del desarrollo o la supervisión de la investigación.</li><li><strong>Límites del mandato del investigador:</strong> bajo ninguna circunstancia el investigador (interno o externo) adopta decisiones disciplinarias, contractuales o de gestión. El investigador externo carece de atribución legal para aplicar sanciones.</li><li><strong>Una herramienta de apoyo a la decisión:</strong> la labor del investigador se limita rigurosamente a la determinación objetiva de los hechos — un análisis imparcial, evidencias verificables y un informe final estructurado basado únicamente en los hechos probados.</li></ul>",
+      faq_q7: "¿Cómo se garantiza que las reglas y el desarrollo de la investigación sean comprendidos por todas las partes interesadas?",
+      faq_a7:
+        "<p>La claridad, la transparencia y la previsibilidad procesal son indispensables para garantizar la equidad del proceso. Las pautas de la entrevista se estructuran así:</p><ul><li><strong>Invitación formal previa:</strong> una convocatoria escrita oficial que precise el marco de la entrevista, los derechos de la persona (como la opción de estar acompañada) y los aspectos prácticos, permitiéndole prepararse con tranquilidad.</li><li><strong>Explicación oral sistemática:</strong> las reglas, los derechos y el desarrollo de la sesión se explican de viva voz al inicio de cada entrevista.</li><li><strong>Grabación consentida y acta escrita:</strong> la entrevista se graba únicamente con el consentimiento explícito de la persona; luego se redacta un acta —resumen detallado o, idealmente, transcripción textual (verbatim)— para su revisión y firma.</li><li><strong>Espacio para preguntas continuas:</strong> se ofrece la opción de plantear cualquier duda antes, durante o después de la sesión por correo electrónico.</li><li><strong>Rol pasivo del abogado:</strong> según las reglas internas de la organización cliente y la jurisdicción aplicable, la presencia de un abogado puede estar autorizada durante una entrevista de la investigación interna — con un denunciante, un testigo o el sujeto denunciado (SOC). En ese caso, asiste únicamente como observador pasivo: vela por las garantías procesales sin responder en lugar de la persona entrevistada.</li></ul>",
 
       footer_tagline: "Investigaciones · Salvaguarda · Cumplimiento Internacional",
       footer_rights: "© {year} Jennifer Calmelat. Todos los derechos reservados.",
