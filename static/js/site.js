@@ -15,7 +15,7 @@
       nav_approach: "Approach",
       nav_about: "Why me",
       nav_experience: "Track record",
-      nav_credentials: "Credentials",
+      nav_credentials: "Qualifications",
       nav_contact: "Contact",
       nav_cta: "Book a strategic consultation",
 
@@ -96,7 +96,7 @@
       about_p1:
         "I bring 13+ years of experience gained within leading international organizations — <strong>ICRC, MSF, UNFPA and UNICEF</strong> — with more than 6 years dedicated to independent investigations into misconduct, fraud and PSEAH.",
       about_p2:
-        "A qualified investigator (CHS Alliance Tier 1, 2 & 3), Master of Law in Human Rights & Bioethics and Certified Fraud Examiner (ongoing), I combine the rigour of Prince 2 project management with a trauma-informed approach to fact-finding — across 21 countries and four continents.",
+        "A qualified investigator (CHS Alliance Tier 1, 2 & 3) and Master of Law in Human Rights & Bioethics, I combine the rigour of Prince 2 project management with a trauma-informed approach to fact-finding — across 21 countries and four continents.",
       stat_years: "Years of experience",
       stat_countries: "Countries",
       stat_orgs: "Organizations",
@@ -112,7 +112,7 @@
         "A career built across the private sector, UN agencies, NGOs, local associations and hospitals — in headquarters and in the field.",
       xp_1_date: "Oct 2023 — Present",
       xp_1_role: "Investigation Consultant & Trainer",
-      xp_1_org: "OSACO · UNICEF · MSF · Business schools & universities",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Business schools, universities & private companies",
       xp_1_detail:
         "<ul><li>Investigations into behavioural misconduct, abuse and corruption: risk mapping, in-depth interviews, analytical reporting.</li><li>Deployed to Eswatini, Côte d'Ivoire, Ethiopia and Cameroon to support investigations and strengthen local capacity.</li><li>Remote investigations covering France, Singapore, Kenya, Tanzania, Rwanda, Yemen, Peru, The Gambia, Chad and DRC.</li><li>Training on investigative techniques and PSEAH information sessions.</li></ul>",
       xp_2_date: "Jul 2024 — May 2025",
@@ -151,7 +151,7 @@
       xp_8_detail:
         "<ul><li>Cash management in SAP; lean management and continuous improvement projects.</li><li>Negotiation with CFOs and CEOs on R&D fiscal incentives — €850K revenue, 36 new clients.</li></ul>",
 
-      cred_eyebrow: "Credentials",
+      cred_eyebrow: "Qualifications",
       cred_title: "Qualified, certified, <em>and always evolving</em>",
       edu_heading: "Education",
       cert_heading: "Certifications & training",
@@ -168,7 +168,6 @@
       edu_4_field: "Sociology of Organizations",
       edu_4_place: "Paris 12 University, France",
       cert_1_name: "Investigator Qualification Training Scheme — Tier 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Investigations Foundations",
       cert_3_date: "London — May 2025",
       cert_4_name: "PSEA, Global Safeguarding & Child Protection",
@@ -178,7 +177,6 @@
       cert_6_name: "BSAFE Security Training",
       cert_6_date: "July 2024",
       cert_certified: "Certified",
-      cert_ongoing: "Ongoing",
 
       ct_eyebrow: "Contact",
       ct_title: "Let's discuss <em>how I can help.</em>",
@@ -253,7 +251,7 @@
       nav_approach: "Approche",
       nav_about: "À propos",
       nav_experience: "Parcours",
-      nav_credentials: "Références",
+      nav_credentials: "Qualifications",
       nav_contact: "Contact",
       nav_cta: "Réserver une consultation stratégique",
 
@@ -334,7 +332,7 @@
       about_p1:
         "Je réunis plus de 13 ans d'expérience acquise au sein d'organisations internationales de premier plan — <strong>CICR, MSF, UNFPA et UNICEF</strong> — dont plus de 6 ans consacrés aux enquêtes indépendantes sur le harcèlement, la fraude et les manquements au code de conduite.",
       about_p2:
-        "Enquêtrice qualifiée (CHS Alliance Niveaux 1, 2 & 3), titulaire d'un Master en droit (Droits de l'Homme & Bioéthique) et Certified Fraud Examiner (en cours), j'allie la rigueur de la méthodologie Prince 2 à une approche sensible au trauma pour établir les faits — dans 21 pays sur quatre continents.",
+        "Enquêtrice qualifiée (CHS Alliance Niveaux 1, 2 & 3) et titulaire d'un Master en droit (Droits de l'Homme & Bioéthique), j'allie la rigueur de la méthodologie Prince 2 à une approche sensible au trauma pour établir les faits — dans 21 pays sur quatre continents.",
       stat_years: "Ans d'expérience",
       stat_countries: "Pays",
       stat_orgs: "Organisations",
@@ -350,7 +348,7 @@
         "Une carrière construite entre le secteur privé, les agences onusiennes, les ONG, les associations locales et les hôpitaux — au siège comme sur le terrain.",
       xp_1_date: "Oct. 2023 — Aujourd'hui",
       xp_1_role: "Consultante en enquêtes & formatrice",
-      xp_1_org: "OSACO · UNICEF · MSF · Écoles de commerce & universités",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Écoles de commerce, universités & entreprises privées",
       xp_1_detail:
         "<ul><li>Enquêtes sur les manquements au code de conduite, les abus et la corruption : cartographie des risques, entretiens approfondis, rapports analytiques.</li><li>Déploiements en Eswatini, Côte d'Ivoire, Éthiopie et Cameroun pour appuyer les enquêtes et renforcer les capacités locales.</li><li>Enquêtes à distance : France, Singapour, Kenya, Tanzanie, Rwanda, Yémen, Pérou, Gambie, Tchad et RDC.</li><li>Formations aux techniques d'enquête et sessions d'information sur la prévention du harcèlement et des abus.</li></ul>",
       xp_2_date: "Juil. 2024 — Mai 2025",
@@ -389,7 +387,7 @@
       xp_8_detail:
         "<ul><li>Gestion de trésorerie sous SAP ; projets de lean management et d'amélioration continue.</li><li>Négociation avec des DAF et PDG sur les incitations fiscales R&D — 850 K€ de revenus, 36 nouveaux clients.</li></ul>",
 
-      cred_eyebrow: "Références",
+      cred_eyebrow: "Qualifications",
       cred_title: "Qualifiée, certifiée, <em>en évolution permanente</em>",
       edu_heading: "Formation",
       cert_heading: "Certifications & formations",
@@ -406,7 +404,6 @@
       edu_4_field: "Sociologie des organisations",
       edu_4_place: "Université Paris 12, France",
       cert_1_name: "Investigator Qualification Training Scheme — Niveaux 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Fondamentaux des enquêtes",
       cert_3_date: "Londres — mai 2025",
       cert_4_name: "PSEA, safeguarding global & protection de l'enfance",
@@ -416,7 +413,6 @@
       cert_6_name: "Formation sécurité BSAFE",
       cert_6_date: "Juillet 2024",
       cert_certified: "Certifiée",
-      cert_ongoing: "En cours",
 
       ct_eyebrow: "Contact",
       ct_title: "Parlons de <em>la façon dont je peux aider.</em>",
@@ -492,7 +488,7 @@
       nav_approach: "Enfoque",
       nav_about: "Sobre mí",
       nav_experience: "Trayectoria",
-      nav_credentials: "Credenciales",
+      nav_credentials: "Cualificaciones",
       nav_contact: "Contacto",
       nav_cta: "Agenda una consulta estratégica",
 
@@ -573,7 +569,7 @@
       about_p1:
         "Reúno más de 13 años de experiencia adquirida en organizaciones internacionales — <strong>CICR, MSF, UNFPA y UNICEF</strong> — con más de 6 años dedicados a investigaciones independientes sobre conductas indebidas, fraude y PSEAH.",
       about_p2:
-        "Investigadora cualificada (CHS Alliance Niveles 1, 2 y 3), Máster en Derecho (Derechos Humanos y Bioética) y Certified Fraud Examiner (en curso), combino el rigor de la metodología Prince 2 con un enfoque sensible al trauma para esclarecer los hechos — en 21 países y cuatro continentes.",
+        "Investigadora cualificada (CHS Alliance Niveles 1, 2 y 3) y Máster en Derecho (Derechos Humanos y Bioética), combino el rigor de la metodología Prince 2 con un enfoque sensible al trauma para esclarecer los hechos — en 21 países y cuatro continentes.",
       stat_years: "Años de experiencia",
       stat_countries: "Países",
       stat_orgs: "Organizaciones",
@@ -589,7 +585,7 @@
         "Una carrera construida entre el sector privado, las agencias de la ONU, las ONG, las asociaciones locales y los hospitales — en sede y en terreno.",
       xp_1_date: "Oct. 2023 — Actualidad",
       xp_1_role: "Consultora en investigaciones y formadora",
-      xp_1_org: "OSACO · UNICEF · MSF · Escuelas de negocios y universidades",
+      xp_1_org: "OSACO · GCPS · UNICEF · MSF · Escuelas de negocios, universidades y empresas privadas",
       xp_1_detail:
         "<ul><li>Investigaciones sobre conductas indebidas, abusos y corrupción: mapeo de riesgos, entrevistas en profundidad, informes analíticos.</li><li>Despliegues en Esuatini, Costa de Marfil, Etiopía y Camerún para apoyar investigaciones y fortalecer la capacidad local.</li><li>Investigaciones en remoto: Francia, Singapur, Kenia, Tanzania, Ruanda, Yemen, Perú, Gambia, Chad y RDC.</li><li>Formación en técnicas de investigación y sesiones informativas sobre PSEAH.</li></ul>",
       xp_2_date: "Jul. 2024 — May. 2025",
@@ -628,7 +624,7 @@
       xp_8_detail:
         "<ul><li>Gestión de tesorería en SAP; proyectos de lean management y mejora continua.</li><li>Negociación con CFO y CEO sobre incentivos fiscales de I+D — 850 K€ de ingresos, 36 nuevos clientes.</li></ul>",
 
-      cred_eyebrow: "Credenciales",
+      cred_eyebrow: "Cualificaciones",
       cred_title: "Cualificada, certificada <em>y en constante evolución</em>",
       edu_heading: "Formación",
       cert_heading: "Certificaciones y cursos",
@@ -645,7 +641,6 @@
       edu_4_field: "Sociología de las organizaciones",
       edu_4_place: "Universidad París 12, Francia",
       cert_1_name: "Investigator Qualification Training Scheme — Niveles 1 · 2 · 3",
-      cert_2_name: "Certified Fraud Examiner (CFE)",
       cert_3_name: "Fundamentos de investigaciones",
       cert_3_date: "Londres — mayo 2025",
       cert_4_name: "PSEA, salvaguarda global y protección de la infancia",
@@ -655,7 +650,6 @@
       cert_6_name: "Formación de seguridad BSAFE",
       cert_6_date: "Julio 2024",
       cert_certified: "Certificada",
-      cert_ongoing: "En curso",
 
       ct_eyebrow: "Contacto",
       ct_title: "Hablemos de <em>cómo puedo ayudarte.</em>",
